@@ -1,2 +1,0 @@
-# Sagar-Ravkhande
-My Certifications
