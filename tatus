@@ -1,0 +1,352 @@
+[33mcommit 62085bd51448683b7e8f96e7b06d5ffc34717276[m[33m ([m[1;36mHEAD -> [m[1;32mnew-static-website-resume[m[33m, [m[1;31morigin/new-static-website-resume[m[33m)[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Wed Mar 15 11:10:30 2023 +0100
+
+    updated number
+
+[33mcommit 4eae91abeb8066b995750dd41779415d9e20d5b0[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Tue Dec 27 09:06:03 2022 +0100
+
+    updated year
+
+[33mcommit 4c1d5d1e2aafdca6f15355f39c1313284009feac[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Wed Aug 17 22:22:41 2022 +0200
+
+    added new blogs
+
+[33mcommit f2bd31f54db5cf161f5dcda6ebd1eb0cf639e7d3[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Wed Aug 17 22:19:35 2022 +0200
+
+    Commented PCNA & juniper
+
+[33mcommit e44ed2aa1f0e5bcc6b1c4f5e44071705162eb4cb[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Wed Aug 17 22:16:46 2022 +0200
+
+    added CKAD certificate
+
+[33mcommit 46c8c77d93d5b46be02acc494fc081d5ba478220[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Tue Jul 26 23:04:15 2022 +0200
+
+    updated the summary
+
+[33mcommit 6e70cf0cedfe04afb3cad5e442ae7d8e87488b50[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Tue Jul 26 23:02:03 2022 +0200
+
+    updated the summary
+
+[33mcommit 1b61ee7655907a5910f01b58575b7a533e86334b[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Tue Jul 26 22:52:30 2022 +0200
+
+    updated the work information
+
+[33mcommit 7e9906181bb3fe574c46fac6781e5789893e9edc[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Mon May 9 12:18:18 2022 +0200
+
+    added azure devops certificate
+
+[33mcommit 6f6c14c6a5416f34dfeea87abde839210d5e9e6a[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Thu May 5 22:48:08 2022 +0200
+
+    fixed ranking
+
+[33mcommit af15802ad5b80dc98580e44d93ae5f139d4a88d8[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Thu May 5 22:46:19 2022 +0200
+
+    fixed alignment
+
+[33mcommit 9ec077f2b3b95e377f524ebd137e67d8ce5247f9[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Thu May 5 22:42:53 2022 +0200
+
+    added blogs section
+
+[33mcommit dc8457abe24e5f92d0bd69e8bcd8b47c747ce875[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Sat Apr 30 19:26:21 2022 +0200
+
+    updated gitlab cert
+
+[33mcommit bb691946cf42a18c90ddf8deb9f83428045237d2[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Wed Apr 20 15:36:38 2022 +0200
+
+    updated content
+
+[33mcommit f946dc1d7acfcdc2c86114cac86a46bb274a055e[m
+Merge: 014f9f6 8e3781b
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Wed Apr 20 12:00:35 2022 +0200
+
+    Merge branch 'new-static-website-resume' of https://github.com/sagary2j/Sagar-Ravkhande into new-static-website-resume
+
+[33mcommit 014f9f6cd003274ceed218ce8e62a2b57e2610c0[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Wed Apr 20 11:59:42 2022 +0200
+
+    Update Certificates
+
+[33mcommit 8e3781b11a0e94aa9f38f4d1b6b3f79ccbbb04f5[m
+Author: Sagar R Ravkhande <sagar.rav89@gmail.com>
+Date:   Mon Apr 18 12:11:26 2022 +0200
+
+    Delete CNAME
+
+[33mcommit add9915ac5a087285c94720d89767af661ff44bd[m
+Author: Sagar R Ravkhande <sagar.rav89@gmail.com>
+Date:   Sun Apr 17 23:15:25 2022 +0200
+
+    Create CNAME
+
+[33mcommit 60b405b9516afe8120d8bba9ad5d2728157eaa2d[m
+Author: Sagar R Ravkhande <sagar.rav89@gmail.com>
+Date:   Sun Apr 17 23:14:59 2022 +0200
+
+    Set theme jekyll-theme-architect
+
+[33mcommit e31186728a2f7ce95efbe128348678ada4c04e31[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Sun Apr 17 23:08:54 2022 +0200
+
+    new static resume
+
+[33mcommit 747f37f8bc9fc75281e9a4217c1e126f807b31f2[m
+Merge: 6242d48 d7817f0
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Sun Apr 17 23:04:34 2022 +0200
+
+    Merge pull request #1 from sagary2j/static-website-certs
+    
+    Create README.md
+
+[33mcommit d7817f05b88d3348439b7afcd136540e7fcef04d[m[33m ([m[1;31morigin/static-website-certs[m[33m)[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Sun Apr 17 23:04:05 2022 +0200
+
+    Create README.md
+
+[33mcommit 6242d4836b1f57da608f397a93d77d0f4f4f5a3b[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Wed Jun 30 20:31:42 2021 +0530
+
+    updated
+
+[33mcommit 8a950e76c2d56fa5b4278b9d5cfd57504baaa741[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Wed Jun 30 20:25:36 2021 +0530
+
+    updated
+
+[33mcommit 01a1d8c035132e044b604e307293d5b15bb6a206[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Wed Jun 30 20:09:53 2021 +0530
+
+    added devops institute certs
+
+[33mcommit 02cad958cde134a5f943da88ffd9eae7f19441d2[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Wed Jun 30 19:56:23 2021 +0530
+
+    updated azure Certs
+
+[33mcommit a93f96210ff2eaaf3d2eed070061853c5e9b1aa3[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Wed Jun 30 19:47:11 2021 +0530
+
+    added alibaba devops
+
+[33mcommit 49c9655f7d7b11b948a62321fb7069730053837d[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Sat Nov 7 01:30:36 2020 +0530
+
+    oci architect
+
+[33mcommit 023895d4742e9b2ea62350023575575a7a94ee0e[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Mon Nov 2 13:26:09 2020 +0530
+
+    new certificates
+
+[33mcommit 527d681920f2b93fe0a13c2d3bfd5f1ea64548f4[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Thu Sep 24 11:45:01 2020 +0530
+
+    removed grandstream
+
+[33mcommit b72f350e7ba2508a91635c7cf7dce582a8101ba9[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Sun Sep 6 15:44:33 2020 +0530
+
+    updated
+
+[33mcommit a884d1cb44d7f04ef3539f0cfac528647bb47dc9[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Sun Sep 6 15:42:39 2020 +0530
+
+    added jncia-cloud
+
+[33mcommit ec32e0d3e62d09f157c6577510388f5fb273aa84[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Tue Sep 1 20:19:21 2020 +0530
+
+    updated
+
+[33mcommit 6da21472060262c69c562b3a57d79fb3c9436a9f[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Tue Sep 1 20:15:31 2020 +0530
+
+    added juniper junos
+
+[33mcommit 67f6f21a255ae47dc847ffb7b66ba279c4c9c470[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Mon Aug 31 16:12:22 2020 +0530
+
+    added new certs
+
+[33mcommit 9c0f6f7c4def9c9d57faa8d81d4b0376ec70096a[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Mon Aug 17 12:17:22 2020 +0530
+
+    aded scrum and kanban
+
+[33mcommit 7d2b2e5304bfcfbb4c701c42649fbdf620064848[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Sat Aug 15 00:06:48 2020 +0530
+
+    updated
+
+[33mcommit 7ba4ce75d91c1a319facdb8f31922f8a9c0d8d32[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Sat Aug 15 00:00:59 2020 +0530
+
+    update
+
+[33mcommit 7b7e8e512014c00062e3f6b49d0d38370faabdeb[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Fri Aug 14 23:56:56 2020 +0530
+
+    new cert devops
+
+[33mcommit 853029e95c8041da72c00cc68f29af82e62da286[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Wed Aug 12 14:06:45 2020 +0530
+
+    added big data
+
+[33mcommit 1777ef0bc94ad0aa1036dc56c5d15e47badd2112[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Wed Aug 12 14:05:20 2020 +0530
+
+    updates
+
+[33mcommit 0f9c344b4879393798c36280b0d6c82fcc9b2460[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Wed Aug 12 14:01:16 2020 +0530
+
+    added big data
+
+[33mcommit 9dce7015fb8592a2c77f7ab623848da00ce9178a[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Mon Aug 10 14:56:42 2020 +0530
+
+    update
+
+[33mcommit 62200f499a147d30fdd34a336150e15a58b93c4d[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Sat Aug 8 01:30:35 2020 +0530
+
+    updates
+
+[33mcommit 626412a561c549ed136babb5dd8f8b576b8831f6[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Sat Aug 8 01:27:06 2020 +0530
+
+    IBM and Aviatrix
+
+[33mcommit db70997c772f136001dec7e077eca99b5f3f845d[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Tue Aug 4 15:10:11 2020 +0530
+
+    added OCI-1z0-1085
+
+[33mcommit 8153371719489c992f47b290e3249055e4ea98e6[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Sun Aug 2 01:06:30 2020 +0530
+
+    ArangoDB-Certificate
+
+[33mcommit e719ea3cd1d8e7300ea5d8827e94dcd544afbc85[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Thu Jul 16 12:15:30 2020 +0530
+
+    updates
+
+[33mcommit 9f79d242b84dfa1343079cf7f8fa5eded602cca1[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Thu Jul 16 03:07:02 2020 +0530
+
+    New Scrum certificate
+
+[33mcommit 0a25c500dc23fdf4c12d0b6eda804da1a1bda2dc[m
+Merge: 247f63d 69bb45f
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Thu Jul 16 03:05:03 2020 +0530
+
+    Merge branch 'master' of https://github.com/sagary2j/SagarRavkhande.github.io
+
+[33mcommit 247f63d156d8513bc2b25eeb8f0fca00ff10da07[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Thu Jul 16 03:04:38 2020 +0530
+
+    New Scrum certificate
+
+[33mcommit 69bb45ffe3b9d33008304180498025cae10a732f[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Mon Jul 13 21:10:03 2020 +0530
+
+    Set theme jekyll-theme-leap-day
+
+[33mcommit d5b48ccd0c6223abe82b96678ff498540c8d17e0[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Mon Jul 13 21:04:45 2020 +0530
+
+    added index.html and images
+
+[33mcommit e067b0a54f42a71a28cbe4a94853e2e81e378faa[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Mon Jul 13 21:03:11 2020 +0530
+
+    updates
+
+[33mcommit 16fe283a84c4b67c81aaa338ed94ec51639f64c6[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Mon Jul 13 20:46:15 2020 +0530
+
+    updates
+
+[33mcommit 4cf2b417b5fcc754ee64e1fc6e194ccb1d31ef60[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Mon Jul 13 20:45:12 2020 +0530
+
+    updates
+
+[33mcommit bbfd63a7afe85de03959dac8995d010d0dbfdb9e[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Mon Jul 13 20:43:27 2020 +0530
+
+    added index.html and images
+
+[33mcommit 0554b6bfc8c7e4bb3ceb48e1481e1c812cc58087[m
+Author: Sagar Ravkhande <sagar.rav89@gmail.com>
+Date:   Mon Jul 13 20:05:32 2020 +0530
+
+    first commit
