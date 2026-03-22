@@ -44,7 +44,10 @@ window.addEventListener('DOMContentLoaded', event => {
     const animateCounters = () => {
         const counters = document.querySelectorAll('[data-counter]');
         counters.forEach(counter => {
-            const target = Number(counter.getAttribute('data-counter')) || 0;
+            const autoCounter = counter.getAttribute('data-counter-auto');
+            const target = autoCounter === 'years'
+                ? getYearsOfExperience()
+                : Number(counter.getAttribute('data-counter')) || 0;
             const suffix = counter.getAttribute('data-suffix') || '';
             const duration = 900;
             const startTime = performance.now();
