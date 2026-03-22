@@ -3,13 +3,15 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
+        <meta name="description" content="Portfolio of Sagar R Ravkhande, Lead Cloud DevOps Engineer specializing in Azure, AWS, Kubernetes, and platform reliability." />
+        <meta name="author" content="Sagar R Ravkhande" />
         <title>Portfolio - Sagar R Ravkhande</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -51,7 +53,25 @@
                         <a href="mailto:sagar.ravkhande@gmail.co">sagar.ravkhande@gmail.com</a>
                     </div>
 <!--                    <p class="lead mb-5">Experienced Azure and Kubernetes Certified Cloud DevOps Architect with 9+ years of extensive experience in understanding the melding of operations and development to quickly deliver product to customers. Proven experience with the DevOps, Cloud Architecture and Monitoring processes as well as DevOps development in Windows and Linux systems.</p>-->
-                        <p class="lead mb-5">Customer-focused Lead Cloud DevOps Engineer offering 11+ years of background setting up CI and CD pipelines and scripting deployment activities. Well-rounded and conscientious professional committed to proactively managing change and quickly deploying critical applications. Expertise in designing highly available, cost-efficient, fault-tolerant, and scalable distributed systems with a passion to transform industries through cloud adoption, and bringing technology to businesses.</p>
+                        <p class="lead mb-4">Customer-focused Lead Cloud DevOps Engineer offering <span id="yearsExperience">11+</span> years of background setting up CI and CD pipelines and scripting deployment activities. Well-rounded and conscientious professional committed to proactively managing change and quickly deploying critical applications. Expertise in designing highly available, cost-efficient, fault-tolerant, and scalable distributed systems with a passion to transform industries through cloud adoption, and bringing technology to businesses.</p>
+                        <div class="kpi-grid mb-5">
+                            <article class="kpi-card">
+                                <p class="kpi-value" data-counter="11" data-suffix="+">0</p>
+                                <p class="kpi-label">Years in IT</p>
+                            </article>
+                            <article class="kpi-card">
+                                <p class="kpi-value" data-counter="100" data-suffix="+">0</p>
+                                <p class="kpi-label">Repositories Migrated</p>
+                            </article>
+                            <article class="kpi-card">
+                                <p class="kpi-value" data-counter="14" data-suffix="+">0</p>
+                                <p class="kpi-label">Certifications</p>
+                            </article>
+                            <article class="kpi-card">
+                                <p class="kpi-value" data-counter="4" data-suffix="">0</p>
+                                <p class="kpi-label">Published Blogs</p>
+                            </article>
+                        </div>
                         <div class="social-icons">
                             <a class="social-icon" href="https://www.linkedin.com/in/sagar-ravkhande/"><i class="fab fa-linkedin-in"></i></a>
                             <a class="social-icon" href="https://github.com/sagary2j"><i class="fab fa-github"></i></a>
@@ -227,7 +247,18 @@
             <section class="resume-section" id="certifications">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Certifications</h2>
-                    <ul class="fa-ul mb-0">
+                    <div class="dynamic-toolbar" role="group" aria-label="Filter certifications">
+                        <input id="certSearch" class="dynamic-search" type="search" placeholder="Search certifications" aria-label="Search certifications" />
+                        <select id="certSourceFilter" class="dynamic-select" aria-label="Filter certifications by source">
+                            <option value="all">All providers</option>
+                            <option value="credly">Credly</option>
+                            <option value="credential.net">Credential.net</option>
+                            <option value="gitlab">GitLab</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span id="certCount" class="dynamic-count" aria-live="polite"></span>
+                    </div>
+                    <ul id="certList" class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
                             <a href="https://www.credly.com/badges/9149fc64-2175-455d-8a5e-d69e5b04f2fe">Certified Kubernetes Administrator</a>
@@ -318,7 +349,11 @@
             <section class="resume-section" id="blogs">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Blogs</h2>
-                    <ul class="fa-ul mb-0">
+                    <div class="dynamic-toolbar" role="group" aria-label="Search blogs">
+                        <input id="blogSearch" class="dynamic-search" type="search" placeholder="Search blog titles" aria-label="Search blogs" />
+                        <span id="blogCount" class="dynamic-count" aria-live="polite"></span>
+                    </div>
+                    <ul id="blogList" class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
                             <a href="https://dev.to/sagary2j/elk-stack-deployment-using-minikube-single-node-architecture-16cl">ELK Stack Deployment using MiniKube single node architecture</a>
@@ -348,6 +383,10 @@
                 </div>
             </section>
         </div>
+        <div id="scrollProgress" aria-hidden="true"></div>
+        <button id="backToTop" type="button" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
