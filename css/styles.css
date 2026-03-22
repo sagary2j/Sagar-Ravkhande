@@ -11661,8 +11661,12 @@ body {
 #sideNav {
   background: linear-gradient(180deg, #0d1117 0%, #0f2132 55%, #0a3a52 100%) !important;
   box-shadow: 4px 0 32px rgba(0, 0, 0, 0.55) !important;
-  position: relative;
-  overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  #sideNav {
+    overflow: hidden;
+  }
 }
 
 /* animated circuit / tech-grid overlay */
