@@ -71,7 +71,9 @@ window.addEventListener('DOMContentLoaded', event => {
 
         const dateRanges = Array.from(document.querySelectorAll('#experience .flex-shrink-0 .text-primary'));
         const intervals = dateRanges.map(range => {
-            const [startText = '', endText = 'Present'] = range.textContent.split(' - ');
+            const [startText = '', endText = 'Present'] = range.textContent
+                .replace(/\s*[\u2013\u2014]\s*/g, ' - ')
+                .split(/\s+-\s+/);
             const start = parseMonthIndex(startText, false);
             const end = parseMonthIndex(endText, true);
             if (start === null || end === null || end < start) {
@@ -100,9 +102,11 @@ window.addEventListener('DOMContentLoaded', event => {
         return Math.max(Math.floor(totalMonths / 12), 0);
     };
 
+    const computedYearsOfExperience = getYearsOfExperience();
+
     const yearsExperience = document.querySelector('#yearsExperience');
     if (yearsExperience) {
-        yearsExperience.textContent = `${getYearsOfExperience()}+`;
+        yearsExperience.textContent = `${computedYearsOfExperience}+`;
     }
 
     const animateCounters = () => {
@@ -110,7 +114,7 @@ window.addEventListener('DOMContentLoaded', event => {
         counters.forEach(counter => {
             const autoCounter = counter.getAttribute('data-counter-auto');
             const target = autoCounter === 'years'
-                ? getYearsOfExperience()
+                ? computedYearsOfExperience
                 : Number(counter.getAttribute('data-counter')) || 0;
             const suffix = counter.getAttribute('data-suffix') || '';
             const duration = 900;
@@ -190,16 +194,20 @@ window.addEventListener('DOMContentLoaded', event => {
     const revealTargets = document.querySelectorAll('.resume-section, .kpi-card');
     revealTargets.forEach(target => target.classList.add('reveal-on-scroll'));
 
-    const revealObserver = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
-                revealObserver.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.15 });
+    if ('IntersectionObserver' in window) {
+        const revealObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
 
-    revealTargets.forEach(target => revealObserver.observe(target));
+        revealTargets.forEach(target => revealObserver.observe(target));
+    } else {
+        revealTargets.forEach(target => target.classList.add('is-visible'));
+    }
 
     const progressBar = document.querySelector('#scrollProgress');
     const backToTop = document.querySelector('#backToTop');
