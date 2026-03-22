@@ -32,8 +32,72 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
     const getYearsOfExperience = () => {
-        const firstCareerYear = 2012;
-        return Math.max(new Date().getFullYear() - firstCareerYear, 0);
+        const monthMap = {
+            january: 0,
+            february: 1,
+            march: 2,
+            april: 3,
+            may: 4,
+            june: 5,
+            july: 6,
+            august: 7,
+            september: 8,
+            october: 9,
+            november: 10,
+            december: 11,
+        };
+
+        const parseMonthIndex = (value, isEnd) => {
+            const text = (value || '').trim().toLowerCase();
+            if (!text) {
+                return null;
+            }
+
+            if (text.includes('present')) {
+                const now = new Date();
+                return (now.getFullYear() * 12) + now.getMonth();
+            }
+
+            const monthMatch = text.match(/january|february|march|april|may|june|july|august|september|october|november|december/);
+            const yearMatch = text.match(/\b\d{4}\b/);
+            if (!yearMatch) {
+                return null;
+            }
+
+            const year = Number(yearMatch[0]);
+            const month = monthMatch ? monthMap[monthMatch[0]] : (isEnd ? 11 : 0);
+            return (year * 12) + month;
+        };
+
+        const dateRanges = Array.from(document.querySelectorAll('#experience .flex-shrink-0 .text-primary'));
+        const intervals = dateRanges.map(range => {
+            const [startText = '', endText = 'Present'] = range.textContent.split(' - ');
+            const start = parseMonthIndex(startText, false);
+            const end = parseMonthIndex(endText, true);
+            if (start === null || end === null || end < start) {
+                return null;
+            }
+            return { start, end };
+        }).filter(Boolean);
+
+        if (intervals.length === 0) {
+            return 0;
+        }
+
+        intervals.sort((a, b) => a.start - b.start);
+
+        const merged = [intervals[0]];
+        intervals.slice(1).forEach(interval => {
+            const last = merged[merged.length - 1];
+            if (interval.start <= last.end + 1) {
+                last.end = Math.max(last.end, interval.end);
+                return;
+            }
+            merged.push(interval);
+        });
+
+        const totalMonths = merged.reduce((sum, interval) => sum + (interval.end - interval.start + 1), 0);
+        return Math.max(Math.floor(totalMonths / 12), 0);
     };
 
     const yearsExperience = document.querySelector('#yearsExperience');
