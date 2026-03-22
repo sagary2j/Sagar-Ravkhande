@@ -11631,3 +11631,319 @@ section.resume-section .resume-section-content {
     width: 100%;
   }
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   DEVOPS ARCHITECT THEME — Vibrant Tech Edition
+   Cyan / Green neon palette · animated sidebar · glowing UI
+═══════════════════════════════════════════════════════════════ */
+
+/* ── Color palette override ── */
+:root {
+  --bs-primary: #0ea5e9;
+  --bs-primary-rgb: 14, 165, 233;
+  --devops-cyan: #0ea5e9;
+  --devops-green: #22c55e;
+  --devops-purple: #a855f7;
+  --devops-dark: #0d1117;
+  --devops-glow: 0 0 20px rgba(14, 165, 233, 0.45);
+  --devops-glow-green: 0 0 20px rgba(34, 197, 94, 0.45);
+  /* reset orange dynamic colors */
+  --dynamic-border: #d0eaf8;
+  --dynamic-shadow: 0 8px 24px rgba(14, 165, 233, 0.08);
+}
+
+/* ── Body ── */
+body {
+  background: #f0f6ff;
+}
+
+/* ── Sidebar dark gradient ── */
+#sideNav {
+  background: linear-gradient(180deg, #0d1117 0%, #0f2132 55%, #0a3a52 100%) !important;
+  box-shadow: 4px 0 32px rgba(0, 0, 0, 0.55) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+/* animated circuit / tech-grid overlay */
+#sideNav::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(0deg,   transparent, transparent 38px,
+      rgba(14, 165, 233, 0.07) 38px, rgba(14, 165, 233, 0.07) 39px),
+    repeating-linear-gradient(90deg, transparent, transparent 38px,
+      rgba(14, 165, 233, 0.07) 38px, rgba(14, 165, 233, 0.07) 39px);
+  pointer-events: none;
+  z-index: 0;
+  animation: devopsGrid 12s linear infinite;
+}
+
+@keyframes devopsGrid {
+  from { background-position: 0 0,    0 0;    }
+  to   { background-position: 0 39px, 39px 0; }
+}
+
+/* ensure real nav content sits above overlay + canvas */
+#sideNav > * { position: relative; z-index: 1; }
+
+/* ── Profile image: pulsing cyan ring ── */
+#sideNav .img-profile {
+  border: 3px solid rgba(14, 165, 233, 0.5) !important;
+  animation: profilePulse 2.8s ease-in-out infinite;
+}
+
+@keyframes profilePulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(14, 165, 233, 0.45),
+                0 0 18px rgba(14, 165, 233, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 0 14px rgba(14, 165, 233, 0),
+                0 0 32px rgba(14, 165, 233, 0.45);
+  }
+}
+
+/* ── Nav links: neon left-border style ── */
+#sideNav .navbar-nav .nav-item .nav-link {
+  color: rgba(200, 230, 255, 0.75) !important;
+  letter-spacing: 0.08rem;
+  border-left: 3px solid transparent;
+  padding: 0.4rem 1rem !important;
+  transition: color 0.2s ease, border-color 0.2s ease,
+              background 0.2s ease, text-shadow 0.2s ease;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link:hover,
+#sideNav .navbar-nav .nav-item .nav-link.active {
+  color: #ffffff !important;
+  border-left-color: var(--devops-cyan);
+  background: rgba(14, 165, 233, 0.1);
+  text-shadow: 0 0 12px rgba(14, 165, 233, 0.8);
+}
+
+/* ── Social icons ── */
+.social-icons .social-icon {
+  background-color: rgba(14, 165, 233, 0.12);
+  border: 1px solid rgba(14, 165, 233, 0.3);
+  color: var(--devops-cyan);
+  transition: all 0.3s ease;
+}
+
+.social-icons .social-icon:hover {
+  background-color: var(--devops-cyan);
+  color: #ffffff;
+  box-shadow: var(--devops-glow);
+  transform: translateY(-4px) scale(1.08);
+}
+
+/* ── Section backgrounds alternating ── */
+section.resume-section { background: #ffffff; }
+section.resume-section:nth-child(even) { background: #f5faff; }
+
+/* ── Section heading gradient underline ── */
+h2.mb-5 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.55rem;
+}
+
+h2.mb-5::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--devops-cyan), var(--devops-green), transparent);
+  animation: headingBar 2.5s ease-in-out infinite alternate;
+  background-size: 200% 100%;
+}
+
+@keyframes headingBar {
+  from { width: 60%;  background-position: 0% 50%;   }
+  to   { width: 100%; background-position: 100% 50%; }
+}
+
+/* ── Name heading gradient ── */
+#about h1 {
+  background: linear-gradient(90deg, #0d1117 10%, #0369a1 60%, #0ea5e9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#about h1 .text-primary {
+  background: linear-gradient(90deg, #0ea5e9, #22c55e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── text-primary utility ── */
+.text-primary { color: var(--devops-cyan) !important; }
+
+/* ── Subheading accent ── */
+.subheading { color: #0369a1; }
+
+/* ── KPI Cards ── */
+.kpi-card {
+  background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%) !important;
+  border: 1px solid rgba(14, 165, 233, 0.22) !important;
+  box-shadow: 0 4px 18px rgba(14, 165, 233, 0.1) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease !important;
+}
+
+.kpi-card:hover {
+  transform: translateY(-7px) !important;
+  box-shadow: 0 14px 36px rgba(14, 165, 233, 0.28) !important;
+  border-color: var(--devops-cyan) !important;
+}
+
+.kpi-value {
+  color: var(--devops-cyan) !important;
+  font-size: 2.4rem !important;
+}
+
+.kpi-label {
+  color: #475569 !important;
+  font-weight: 700;
+  letter-spacing: 0.07rem;
+}
+
+/* ── Experience items: animated left accent ── */
+#experience .d-flex.flex-column.flex-md-row {
+  padding-left: 1.1rem;
+  border-left: 3px solid #e2f0fa;
+  transition: border-color 0.3s ease, background 0.3s ease;
+  border-radius: 0.25rem;
+}
+
+#experience .d-flex.flex-column.flex-md-row:hover {
+  border-left-color: var(--devops-cyan);
+  background: rgba(14, 165, 233, 0.03);
+}
+
+/* ── Skills list hover ── */
+#skills .fa-ul li {
+  padding: 0.45rem 0.6rem;
+  border-radius: 0.4rem;
+  transition: background 0.22s ease, transform 0.22s ease;
+  margin-bottom: 0.35rem;
+}
+
+#skills .fa-ul li:hover {
+  background: rgba(14, 165, 233, 0.07);
+  transform: translateX(5px);
+}
+
+#skills .fa-li .fa-check { color: var(--devops-green); }
+
+/* ── Cert / blog trophy icons ── */
+.fa-trophy {
+  filter: drop-shadow(0 0 5px rgba(255, 193, 7, 0.65));
+}
+
+/* ── Scroll progress bar ── */
+#scrollProgress {
+  background: linear-gradient(90deg, #0ea5e9, #22c55e, #a855f7) !important;
+  height: 3px !important;
+}
+
+/* ── Back-to-top glowing button ── */
+#backToTop {
+  background: linear-gradient(135deg, #0ea5e9, #0284c7) !important;
+  box-shadow: 0 0 18px rgba(14, 165, 233, 0.45) !important;
+}
+
+#backToTop:hover {
+  background: linear-gradient(135deg, #22c55e, #16a34a) !important;
+  box-shadow: 0 0 22px rgba(34, 197, 94, 0.55) !important;
+}
+
+/* ── Resume action buttons (top-right overlay) ── */
+#resumeActions .btn-primary.resume-action-btn {
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+  border-color: transparent;
+  box-shadow: 0 4px 14px rgba(14, 165, 233, 0.4);
+}
+
+#resumeActions .btn-primary.resume-action-btn:hover {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  box-shadow: 0 4px 16px rgba(34, 197, 94, 0.45);
+  border-color: transparent;
+}
+
+#resumeActions .btn-outline-light.resume-action-btn {
+  border-color: rgba(14, 165, 233, 0.55);
+  color: #0369a1;
+  background: rgba(14, 165, 233, 0.08);
+}
+
+#resumeActions .btn-outline-light.resume-action-btn:hover {
+  background: rgba(14, 165, 233, 0.18);
+  border-color: var(--devops-cyan);
+  color: var(--devops-cyan);
+}
+
+/* ── Search / filter inputs ── */
+.dynamic-search:focus,
+.dynamic-select:focus {
+  border-color: var(--devops-cyan) !important;
+  box-shadow: 0 0 0 0.18rem rgba(14, 165, 233, 0.22) !important;
+}
+
+/* ── HR separators ── */
+hr.m-0 { border-color: #d0eaf8; }
+
+/* ── Typed cursor blink ── */
+.typed-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 0.85em;
+  background: var(--devops-cyan);
+  margin-left: 3px;
+  vertical-align: middle;
+  border-radius: 1px;
+  animation: cursorBlink 1s step-end infinite;
+}
+
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* ── Particle canvas inside sidebar ── */
+#devopsCanvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.28;
+}
+
+/* ── Section reveal with a subtle slide direction ── */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Responsive: no text gradient on small screens (avoids render issues) ── */
+@media (max-width: 575px) {
+  #about h1,
+  #about h1 .text-primary {
+    background: none;
+    -webkit-text-fill-color: unset;
+    color: inherit;
+  }
+  #about h1 .text-primary { color: var(--devops-cyan); }
+}

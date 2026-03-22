@@ -234,4 +234,116 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     }
 
+    // ─────────────────────────────────────────────────────────────
+    //  DEVOPS ARCHITECT THEME — Particle code-rain + typewriter
+    // ─────────────────────────────────────────────────────────────
+
+    // 1. Scrolling code-rain particle canvas on sidebar
+    const initSidebarCanvas = () => {
+        const sideNav = document.getElementById('sideNav');
+        if (!sideNav) return;
+
+        const canvas = document.createElement('canvas');
+        canvas.id = 'devopsCanvas';
+        sideNav.insertBefore(canvas, sideNav.firstChild);
+
+        const ctx = canvas.getContext('2d');
+        const CHARS = '01{}[]<>()=>:/\\|#@!;~&%$'.split('');
+
+        const syncSize = () => {
+            canvas.width  = sideNav.offsetWidth;
+            canvas.height = sideNav.offsetHeight;
+        };
+        syncSize();
+
+        const ro = new ResizeObserver(syncSize);
+        ro.observe(sideNav);
+
+        const rand = (a, b) => a + Math.random() * (b - a);
+
+        const makeParticle = () => ({
+            x: rand(0, canvas.width),
+            y: rand(-40, canvas.height),
+            speed:   rand(0.25, 0.9),
+            opacity: rand(0.15, 0.55),
+            char:    CHARS[Math.floor(Math.random() * CHARS.length)],
+            size:    rand(9, 14),
+            color:   Math.random() > 0.55 ? '#0ea5e9' : '#22c55e',
+        });
+
+        const particles = Array.from({ length: 55 }, makeParticle);
+
+        const tick = () => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => {
+                ctx.globalAlpha = p.opacity;
+                ctx.fillStyle   = p.color;
+                ctx.font        = `${p.size}px "Courier New", monospace`;
+                ctx.fillText(p.char, p.x, p.y);
+                p.y += p.speed;
+                // randomly swap character occasionally for a "glitch" feel
+                if (Math.random() < 0.008) {
+                    p.char = CHARS[Math.floor(Math.random() * CHARS.length)];
+                }
+                if (p.y > canvas.height + 20) {
+                    Object.assign(p, makeParticle(), { y: -20 });
+                }
+            });
+            ctx.globalAlpha = 1;
+            requestAnimationFrame(tick);
+        };
+        tick();
+    };
+
+    initSidebarCanvas();
+
+    // 2. Typewriter effect on the name heading
+    const initTypewriter = () => {
+        const h1 = document.querySelector('#about h1');
+        if (!h1) return;
+
+        const firstText = 'Sagar R';
+        const lastText  = 'Ravkhande';
+
+        h1.innerHTML = '';
+
+        const firstSpan = Object.assign(document.createElement('span'), { className: 'd-inline' });
+        const gap       = document.createTextNode('\u00a0');
+        const lastSpan  = Object.assign(document.createElement('span'), { className: 'text-primary' });
+        const cursor    = Object.assign(document.createElement('span'), { className: 'typed-cursor' });
+
+        h1.append(firstSpan, gap, lastSpan, cursor);
+
+        let phase = 0, i = 0;
+        const targets = [firstText, lastText];
+        const spans   = [firstSpan, lastSpan];
+
+        const type = () => {
+            if (i < targets[phase].length) {
+                spans[phase].textContent += targets[phase][i++];
+                setTimeout(type, 75);
+            } else if (phase === 0) {
+                phase = 1;
+                i = 0;
+                setTimeout(type, 220);
+            } else {
+                setTimeout(() => { cursor.style.display = 'none'; }, 3500);
+            }
+        };
+
+        setTimeout(type, 500);
+    };
+
+    initTypewriter();
+
+    // 3. Subtle glitch / color-shift on skill category labels
+    const initSkillGlow = () => {
+        document.querySelectorAll('#skills .fa-ul li strong').forEach((el, idx) => {
+            el.style.color = ['#0ea5e9', '#22c55e', '#a855f7', '#f59e0b',
+                              '#0ea5e9', '#22c55e', '#0ea5e9', '#f59e0b'][idx % 8];
+        });
+    };
+
+    initSkillGlow();
+
 });
