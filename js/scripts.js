@@ -160,12 +160,14 @@ window.addEventListener('DOMContentLoaded', event => {
                 const text = item.textContent.toLowerCase();
                 const link = item.querySelector('a');
                 const href = link ? link.href.toLowerCase() : '';
+                const itemProvider = (item.getAttribute('data-provider') || '').toLowerCase();
 
                 const matchesText = text.includes(term);
                 const sourceMatch = sourceFilter === 'all'
                     || (sourceFilter === 'other'
-                        ? !href.includes('credly') && !href.includes('credential.net') && !href.includes('gitlab')
-                        : href.includes(sourceFilter));
+                        ? (!itemProvider && !href.includes('credly') && !href.includes('credential.net') && !href.includes('gitlab'))
+                            || itemProvider === 'other'
+                        : itemProvider === sourceFilter || href.includes(sourceFilter));
 
                 const show = matchesText && sourceMatch;
                 item.classList.toggle('is-hidden', !show);
