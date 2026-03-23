@@ -12274,3 +12274,54 @@ hr.m-0 { border-color: #d0eaf8; }
     transition: none;
   }
 }
+
+/* ── Skills grid ── */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skill-card {
+  border: 1px solid rgba(52, 152, 219, 0.2);
+  border-radius: 0.95rem;
+  background: linear-gradient(145deg, #f8faff, #ffffff);
+  padding: 1.25rem 1rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(52, 152, 219, 0.5);
+  box-shadow: 0 10px 24px rgba(52, 152, 219, 0.12);
+}
+
+.skill-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.75rem;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.skill-tag {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  font-size: 0.78rem;
+  border-radius: 999px;
+  background: rgba(52, 152, 219, 0.1);
+  color: #1a5c8a;
+  border: 1px solid rgba(52, 152, 219, 0.25);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skill-card,
+  .skill-card:hover {
+    transform: none;
+    transition: none;
+  }
+}

@@ -15,7 +15,7 @@
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css?v=7" rel="stylesheet" />
+        <link href="css/styles.css?v=8" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -214,41 +214,94 @@
                             <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
                             <li class="list-inline-item"><i class="fab fa-npm"></i></li>
                             </ul>-->
-                    <div class="subheading mb-3"></div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <strong>Cloud:</strong> AWS (EC2, EKS, Lambda, AWS S3, VPC, IAM), Azure (VM, Azure Storage, AKS, Azure Functions, Service Bus, Azure DevOps).
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <strong>IaC:</strong> Terraform, Azure Bicep &amp; ARM, CloudFormation, Ansible, Puppet, Helm.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <strong>Containers:</strong> Kubernetes, Docker, EKS, AKS, ECS.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <strong>CI/CD:</strong> GitHub Actions, GitLab CI/CD, Jenkins, Azure DevOps, GitOps, ArgoCD.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <strong>Monitoring:</strong> Prometheus, Grafana, CloudWatch, ELK.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <strong>Infrastructure &amp; Security:</strong> Linux, ELK, Confluent Kafka, Vault, IAM, MFA, OWASP.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <strong>Languages:</strong> Python, Bash, Boto3.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <strong>Databases:</strong> MySQL, Microsoft SQL Server, MongoDB Atlas, Redis.
-                        </li>
-                    </ul>
+                    <div class="skill-grid" role="list" aria-label="Technical skills by category">
+                        <article class="skill-card" role="listitem">
+                            <h3><i class="fas fa-cloud text-primary me-2" aria-hidden="true"></i>Cloud</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">EC2</span>
+                                <span class="skill-tag">EKS</span>
+                                <span class="skill-tag">Lambda</span>
+                                <span class="skill-tag">S3</span>
+                                <span class="skill-tag">VPC</span>
+                                <span class="skill-tag">IAM</span>
+                                <span class="skill-tag">Azure VM</span>
+                                <span class="skill-tag">AKS</span>
+                                <span class="skill-tag">Azure Functions</span>
+                                <span class="skill-tag">Service Bus</span>
+                                <span class="skill-tag">Azure DevOps</span>
+                            </div>
+                        </article>
+                        <article class="skill-card" role="listitem">
+                            <h3><i class="fas fa-code text-primary me-2" aria-hidden="true"></i>Infrastructure as Code</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Terraform</span>
+                                <span class="skill-tag">Azure Bicep</span>
+                                <span class="skill-tag">ARM</span>
+                                <span class="skill-tag">CloudFormation</span>
+                                <span class="skill-tag">Ansible</span>
+                                <span class="skill-tag">Puppet</span>
+                                <span class="skill-tag">Helm</span>
+                            </div>
+                        </article>
+                        <article class="skill-card" role="listitem">
+                            <h3><i class="fas fa-cubes text-primary me-2" aria-hidden="true"></i>Containers</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Kubernetes</span>
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">EKS</span>
+                                <span class="skill-tag">AKS</span>
+                                <span class="skill-tag">ECS</span>
+                            </div>
+                        </article>
+                        <article class="skill-card" role="listitem">
+                            <h3><i class="fas fa-infinity text-primary me-2" aria-hidden="true"></i>CI/CD</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">GitHub Actions</span>
+                                <span class="skill-tag">GitLab CI/CD</span>
+                                <span class="skill-tag">Jenkins</span>
+                                <span class="skill-tag">Azure DevOps</span>
+                                <span class="skill-tag">GitOps</span>
+                                <span class="skill-tag">ArgoCD</span>
+                            </div>
+                        </article>
+                        <article class="skill-card" role="listitem">
+                            <h3><i class="fas fa-chart-line text-primary me-2" aria-hidden="true"></i>Monitoring</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Prometheus</span>
+                                <span class="skill-tag">Grafana</span>
+                                <span class="skill-tag">CloudWatch</span>
+                                <span class="skill-tag">ELK</span>
+                            </div>
+                        </article>
+                        <article class="skill-card" role="listitem">
+                            <h3><i class="fas fa-shield-halved text-primary me-2" aria-hidden="true"></i>Infra &amp; Security</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Linux</span>
+                                <span class="skill-tag">Confluent Kafka</span>
+                                <span class="skill-tag">Vault</span>
+                                <span class="skill-tag">IAM</span>
+                                <span class="skill-tag">MFA</span>
+                                <span class="skill-tag">OWASP</span>
+                            </div>
+                        </article>
+                        <article class="skill-card" role="listitem">
+                            <h3><i class="fas fa-terminal text-primary me-2" aria-hidden="true"></i>Languages</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Bash</span>
+                                <span class="skill-tag">Boto3</span>
+                            </div>
+                        </article>
+                        <article class="skill-card" role="listitem">
+                            <h3><i class="fas fa-database text-primary me-2" aria-hidden="true"></i>Databases</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">MySQL</span>
+                                <span class="skill-tag">SQL Server</span>
+                                <span class="skill-tag">MongoDB Atlas</span>
+                                <span class="skill-tag">Redis</span>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </section>
             <hr class="m-0" />
