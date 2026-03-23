@@ -9,6 +9,8 @@
 
 window.addEventListener('DOMContentLoaded', event => {
 
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
     // Activate Bootstrap scrollspy on the main nav element
     const sideNav = document.body.querySelector('#sideNav');
     if (sideNav) {
@@ -117,7 +119,7 @@ window.addEventListener('DOMContentLoaded', event => {
                 ? computedYearsOfExperience
                 : Number(counter.getAttribute('data-counter')) || 0;
             const suffix = counter.getAttribute('data-suffix') || '';
-            const duration = 900;
+            const duration = prefersReducedMotion ? 0 : 900;
             const startTime = performance.now();
 
             const tick = now => {
@@ -129,7 +131,11 @@ window.addEventListener('DOMContentLoaded', event => {
                 }
             };
 
-            requestAnimationFrame(tick);
+            if (duration === 0) {
+                counter.textContent = `${target}${suffix}`;
+            } else {
+                requestAnimationFrame(tick);
+            }
         });
     };
     animateCounters();
@@ -240,6 +246,10 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // 1. Scrolling code-rain particle canvas on sidebar
     const initSidebarCanvas = () => {
+        if (prefersReducedMotion) {
+            return;
+        }
+
         const sideNav = document.getElementById('sideNav');
         if (!sideNav) return;
 
@@ -299,6 +309,10 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // 2. Typewriter effect on the name heading
     const initTypewriter = () => {
+        if (prefersReducedMotion) {
+            return;
+        }
+
         const h1 = document.querySelector('#about h1');
         if (!h1) return;
 
@@ -345,5 +359,66 @@ window.addEventListener('DOMContentLoaded', event => {
     };
 
     initSkillGlow();
+
+    // 4. Staggered reveal for experience timeline entries
+    const initExperienceStagger = () => {
+        const timelineItems = Array.from(document.querySelectorAll('#experience .d-flex.flex-column.flex-md-row'));
+        if (timelineItems.length === 0) {
+            return;
+        }
+
+        timelineItems.forEach((item, index) => {
+            item.classList.add('timeline-reveal');
+            item.style.setProperty('--stagger-delay', `${index * 90}ms`);
+        });
+
+        if (prefersReducedMotion) {
+            timelineItems.forEach(item => item.classList.add('in-view'));
+            return;
+        }
+
+        if (!('IntersectionObserver' in window)) {
+            timelineItems.forEach(item => item.classList.add('in-view'));
+            return;
+        }
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.2 });
+
+        timelineItems.forEach(item => observer.observe(item));
+    };
+
+    initExperienceStagger();
+
+    // 5. Lightweight magnetic hover for CTA + social icons
+    const initMagneticHover = () => {
+        const targets = document.querySelectorAll('.resume-action-btn, .social-icons .social-icon, .hero-chip');
+        if (prefersReducedMotion || targets.length === 0) {
+            return;
+        }
+
+        targets.forEach(el => {
+            el.addEventListener('mousemove', e => {
+                const rect = el.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const moveX = ((x / rect.width) - 0.5) * 10;
+                const moveY = ((y / rect.height) - 0.5) * 10;
+                el.style.transform = `translate(${moveX}px, ${moveY}px)`;
+            });
+
+            el.addEventListener('mouseleave', () => {
+                el.style.transform = '';
+            });
+        });
+    };
+
+    initMagneticHover();
 
 });

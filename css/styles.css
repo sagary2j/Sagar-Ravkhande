@@ -11951,3 +11951,101 @@ hr.m-0 { border-color: #d0eaf8; }
   }
   #about h1 .text-primary { color: var(--devops-cyan); }
 }
+
+/* Additional motion layer for hero + timeline */
+.hero-motion-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.hero-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(14, 165, 233, 0.35);
+  color: #0369a1;
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(34, 197, 94, 0.08));
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04rem;
+  animation: chipFloat 4s ease-in-out infinite;
+  transition: box-shadow 0.2s ease;
+}
+
+.hero-chip:nth-child(2n) {
+  animation-delay: 0.5s;
+}
+
+.hero-chip:nth-child(3n) {
+  animation-delay: 1s;
+}
+
+.hero-chip:hover {
+  box-shadow: 0 0 0 0.18rem rgba(14, 165, 233, 0.14);
+}
+
+@keyframes chipFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.scroll-cue {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 1.2rem;
+  color: #0369a1;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-size: 0.78rem;
+}
+
+.scroll-cue i {
+  animation: cueBounce 1.4s ease-in-out infinite;
+}
+
+@keyframes cueBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+}
+
+.timeline-reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition-delay: var(--stagger-delay, 0ms);
+}
+
+.timeline-reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-chip,
+  .scroll-cue i {
+    animation: none !important;
+  }
+
+  .timeline-reveal,
+  .timeline-reveal.in-view {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
