@@ -149,7 +149,7 @@ window.addEventListener('DOMContentLoaded', event => {
             return;
         }
 
-        const items = Array.from(list.querySelectorAll('li'));
+        const items = Array.from(list.querySelectorAll('[data-filter-item], li'));
 
         const updateList = () => {
             const term = search.value.trim().toLowerCase();
