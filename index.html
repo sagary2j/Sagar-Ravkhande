@@ -1,222 +1,344 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Resume of Sagar R Ravkhande, Senior Cloud and DevOps Engineer with 13+ years of experience in AWS, Azure, Kubernetes, Terraform, and CI/CD." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Sagar R Ravkhande · Senior Cloud &amp; DevOps Engineer</title>
+        <meta name="description" content="Sagar R Ravkhande — Senior Cloud and DevOps Engineer with 14+ years across AWS, Azure, Kubernetes, Terraform, CI/CD and DevSecOps." />
         <meta name="author" content="Sagar R Ravkhande" />
-        <title>Portfolio - Sagar R Ravkhande</title>
+        <meta name="theme-color" content="#0a0e14" />
+        <link rel="canonical" href="https://sagary2j.github.io/Sagar-Ravkhande/" />
+        <meta property="og:type" content="profile" />
+        <meta property="og:title" content="Sagar R Ravkhande · Senior Cloud &amp; DevOps Engineer" />
+        <meta property="og:description" content="Cloud architecture, Kubernetes platforms, Terraform and DevSecOps — 14+ years of shipping reliable infrastructure." />
+        <meta property="og:url" content="https://sagary2j.github.io/Sagar-Ravkhande/" />
+        <meta property="og:image" content="https://sagary2j.github.io/Sagar-Ravkhande/assets/img/profile.jpg" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@RavkhandeSagar" />
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script defer src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
+        <script>
+            (function () {
+                var stored = null;
+                try { stored = localStorage.getItem('theme'); } catch (e) {}
+                var theme = stored || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+                document.documentElement.setAttribute('data-theme', theme);
+            })();
+        </script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css?v=8" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="css/styles.css?v=9" rel="stylesheet" />
+        <link href="css/theme.css?v=1" rel="stylesheet" />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Sagar R Ravkhande",
+                "jobTitle": "Senior Cloud and DevOps Engineer",
+                "url": "https://sagary2j.github.io/Sagar-Ravkhande/",
+                "image": "https://sagary2j.github.io/Sagar-Ravkhande/assets/img/profile.jpg",
+                "address": { "@type": "PostalAddress", "addressLocality": "Wrocław", "addressCountry": "PL" },
+                "sameAs": [
+                    "https://www.linkedin.com/in/sagar-ravkhande/",
+                    "https://github.com/sagary2j",
+                    "https://x.com/RavkhandeSagar",
+                    "https://dev.to/sagary2j"
+                ],
+                "knowsAbout": ["AWS", "Azure", "Kubernetes", "Terraform", "CI/CD", "DevSecOps", "Observability"]
+            }
+        </script>
     </head>
     <body id="page-top">
+        <a class="skip-link" href="#main">Skip to content</a>
+        <div id="scrollProgress" aria-hidden="true"></div>
+
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="sideNav" aria-label="Primary">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Sagar R Ravkhande</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/Profile+Cover.jpg" alt="..." /></span>
+                <span class="d-none d-lg-flex brand-block">
+                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/Profile+Cover.jpg" alt="Portrait of Sagar R Ravkhande" width="160" height="160" />
+                    <span class="brand-name">Sagar R Ravkhande</span>
+                    <span class="brand-role">~/cloud/devops</span>
+                </span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certifications">Certifications</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#blogs">Blogs</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about"><span class="nav-index">01</span>about</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience"><span class="nav-index">02</span>experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills"><span class="nav-index">03</span>skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects"><span class="nav-index">04</span>projects</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certifications"><span class="nav-index">05</span>certifications</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#blogs"><span class="nav-index">06</span>blogs</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education"><span class="nav-index">07</span>education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests"><span class="nav-index">08</span>interests</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact"><span class="nav-index">09</span>contact</a></li>
                 </ul>
+                <div class="sidebar-footer">
+                    <button type="button" class="icon-btn" data-theme-toggle aria-label="Toggle light and dark theme" title="Toggle theme">
+                        <i class="fas fa-moon theme-icon-dark" aria-hidden="true"></i>
+                        <i class="fas fa-sun theme-icon-light" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="icon-btn" data-palette-open aria-label="Open command palette" title="Command palette">
+                        <i class="fas fa-terminal" aria-hidden="true"></i><kbd data-mod-key>Ctrl</kbd><kbd>K</kbd>
+                    </button>
+                    <a class="icon-btn" href="Sagar_Ravkhande_Resume_2026.pdf" download title="Download résumé (PDF)">
+                        <i class="fas fa-file-pdf" aria-hidden="true"></i>CV
+                    </a>
+                </div>
             </div>
         </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
+
+        <main id="main" class="container-fluid p-0">
             <!-- About-->
-            <section class="resume-section" id="about">
+            <section class="resume-section hero" id="about">
                 <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Sagar R
-                        <span class="text-primary">Ravkhande</span>
-                    </h1>
-                    <div class="subheading mb-5">
-                        Ciepła 15/13  · Wrocław, Poland, 50-529  · +48 739521860/+91 9028266052  ·
-                        <a href="mailto:sagar.ravkhande@gmail.com">sagar.ravkhande@gmail.com</a>
+                    <div class="hero-grid">
+                        <div class="hero-copy">
+                            <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>Senior Cloud &amp; DevOps Engineer · Wrocław, Poland</p>
+                            <h1 class="hero-name">Sagar R <span class="text-gradient">Ravkhande</span></h1>
+                            <p class="hero-role">
+                                <span class="visually-hidden">DevOps Architect, Cloud Platform Engineer, Kubernetes and Terraform specialist, DevSecOps advocate.</span>
+                                <span aria-hidden="true"><span class="prompt">&gt;</span> <span id="roleRotator" data-roles='["DevOps Architect", "Cloud Platform Engineer", "Kubernetes &amp; Terraform", "DevSecOps Advocate", "Automation Enthusiast"]'>DevOps Architect</span><span class="caret"></span></span>
+                            </p>
+                            <p class="lead">Senior Cloud and DevOps Engineer with <span id="yearsExperience">14+</span> years of experience in cloud architecture, infrastructure automation, and platform reliability across AWS and Azure. Proven delivery of cost optimization (<strong>$148K annual savings</strong>), deployment acceleration (<strong>40% faster releases</strong>), and production stability (<strong>99.9% uptime</strong>) through Kubernetes, Terraform, CI/CD, and DevSecOps practices.</p>
+                            <div class="hero-actions">
+                                <a class="btn-accent" href="Sagar_Ravkhande_Resume_2026.pdf" download><i class="fas fa-download" aria-hidden="true"></i>Download CV</a>
+                                <a class="btn-ghost" href="Sagar_Ravkhande_Resume_2026.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-eye" aria-hidden="true"></i>Preview CV</a>
+                                <a class="btn-ghost js-scroll-trigger" href="#contact"><i class="fas fa-paper-plane" aria-hidden="true"></i>Get in touch</a>
+                            </div>
+                            <div class="social-icons">
+                                <a class="social-icon" href="https://www.linkedin.com/in/sagar-ravkhande/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                                <a class="social-icon" href="https://github.com/sagary2j" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                                <a class="social-icon" href="https://dev.to/sagary2j" target="_blank" rel="noopener noreferrer" aria-label="DEV Community"><i class="fab fa-dev" aria-hidden="true"></i></a>
+                                <a class="social-icon" href="https://x.com/RavkhandeSagar" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="terminal" id="terminal" role="region" aria-label="Interactive terminal">
+                            <div class="terminal-bar" aria-hidden="true">
+                                <span class="terminal-dot"></span><span class="terminal-dot"></span><span class="terminal-dot"></span>
+                                <span class="terminal-title">sagar@cloud: ~ — zsh</span>
+                            </div>
+                            <div class="terminal-body">
+                                <div id="terminalOutput" aria-live="polite">
+                                    <p class="terminal-line"><span class="t-prompt">sagar@cloud</span><span class="t-muted">:</span><span class="t-path">~</span><span class="t-muted">$</span> whoami</p>
+                                    <p class="terminal-line">Sagar R Ravkhande — Senior Cloud &amp; DevOps Engineer</p>
+                                    <p class="terminal-line t-muted">Type <span class="t-accent">help</span> to explore.</p>
+                                </div>
+                                <form id="terminalForm" class="terminal-form" autocomplete="off">
+                                    <span aria-hidden="true"><span class="t-prompt">sagar@cloud</span><span class="t-muted">:</span><span class="t-path">~</span><span class="t-muted">$</span></span>
+                                    <input id="terminalInput" class="terminal-input" type="text" spellcheck="false" autocapitalize="off" aria-label="Terminal command. Type help to list commands." />
+                                </form>
+                            </div>
+                            <div class="terminal-hints" aria-label="Suggested commands">
+                                <button type="button" class="terminal-hint" data-command="help">help</button>
+                                <button type="button" class="terminal-hint" data-command="skills">skills</button>
+                                <button type="button" class="terminal-hint" data-command="kubectl get pods -n career">kubectl get pods</button>
+                                <button type="button" class="terminal-hint" data-command="terraform plan">terraform plan</button>
+                                <button type="button" class="terminal-hint" data-command="sudo hire-me">sudo hire-me</button>
+                            </div>
+                        </div>
                     </div>
-<!--                    <p class="lead mb-5">Experienced Azure and Kubernetes Certified Cloud DevOps Architect with 9+ years of extensive experience in understanding the melding of operations and development to quickly deliver product to customers. Proven experience with the DevOps, Cloud Architecture and Monitoring processes as well as DevOps development in Windows and Linux systems.</p>-->
-                        <p class="lead mb-4">Senior Cloud and DevOps Engineer with <span id="yearsExperience">13+</span> years of experience in cloud architecture, infrastructure automation, and platform reliability across AWS and Azure. Proven delivery of cost optimization ($148K annual savings), deployment acceleration (40% faster releases), and production stability (99.9% uptime) through Kubernetes, Terraform, CI/CD, and DevSecOps practices. Strong expertise in Infrastructure as Code, observability, and enterprise-grade cloud security.</p>
-                        <div class="kpi-grid mb-4">
-                            <article class="kpi-card">
-                                <p class="kpi-value" data-counter-auto="years" data-counter="13" data-suffix="+">0</p>
-                                <p class="kpi-label">Years in IT</p>
-                            </article>
-                            <article class="kpi-card">
-                                <p class="kpi-value" data-counter="9" data-suffix="+">0</p>
-                                <p class="kpi-label">Certifications</p>
-                            </article>
-                            <article class="kpi-card">
-                                <p class="kpi-value" data-counter="4" data-suffix="">0</p>
-                                <p class="kpi-label">Published Blogs</p>
-                            </article>
-                        </div>
-                        <div class="hero-motion-chips mb-4" aria-label="Core technology focus areas">
-                            <span class="hero-chip badge rounded-pill">AWS</span>
-                            <span class="hero-chip badge rounded-pill">Azure</span>
-                            <span class="hero-chip badge rounded-pill">Kubernetes</span>
-                            <span class="hero-chip badge rounded-pill">Terraform</span>
-                            <span class="hero-chip badge rounded-pill">DevSecOps</span>
-                        </div>
-                        <div class="social-icons">
-                            <a class="social-icon" href="https://www.linkedin.com/in/sagar-ravkhande/"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="social-icon" href="https://github.com/sagary2j"><i class="fab fa-github"></i></a>
-                            <a class="social-icon" href="http://www.twitter.com/RavkhandeSagar"><i class="fab fa-twitter"></i></a>
-                            <!--
-                                <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            -->
-                        </div>
-                        <a class="scroll-cue js-scroll-trigger" href="#experience" aria-label="Scroll to experience section">
-                            <span>Explore experience</span>
-                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
-                        </a>
+
+                    <div class="metrics" aria-label="Impact metrics">
+                        <article class="metric">
+                            <p class="metric-tag">uptime: career</p>
+                            <p class="metric-value" data-counter="14" data-counter-auto="years" data-suffix="+">14+</p>
+                            <p class="metric-label">Years in cloud &amp; IT</p>
+                        </article>
+                        <article class="metric">
+                            <p class="metric-tag">slo: availability</p>
+                            <p class="metric-value" data-counter="99.9" data-decimals="1" data-suffix="%">99.9%</p>
+                            <p class="metric-label">Platform uptime SLA</p>
+                        </article>
+                        <article class="metric">
+                            <p class="metric-tag">finops: savings</p>
+                            <p class="metric-value" data-counter="148" data-prefix="$" data-suffix="K">$148K</p>
+                            <p class="metric-label">Annual cloud savings</p>
+                        </article>
+                        <article class="metric">
+                            <p class="metric-tag">dora: lead time</p>
+                            <p class="metric-value" data-counter="40" data-suffix="%">40%</p>
+                            <p class="metric-label">Faster release cycles</p>
+                        </article>
+                        <article class="metric">
+                            <p class="metric-tag">sec: critical cves</p>
+                            <p class="metric-value" data-counter="75" data-prefix="−" data-suffix="%">−75%</p>
+                            <p class="metric-label">Critical vulnerabilities</p>
+                        </article>
+                        <article class="metric">
+                            <p class="metric-tag">certs: verified</p>
+                            <p class="metric-value" data-counter="11" data-counter-auto="certs">11</p>
+                            <p class="metric-label">Certifications</p>
+                        </article>
+                    </div>
                 </div>
             </section>
+
             <!-- Experience-->
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Senior Cloud DevOps Engineer</h3>
-                            <div class="subheading mb-3">Luxoft, Wroclaw, Poland</div>
-                            <p>Architected and operated multi-cloud infrastructure across AWS and Azure using Terraform and Kubernetes to improve scalability, fault tolerance, and platform resilience.</p>
-                            <p>Designed multi-AZ EKS environments and implemented automated drift detection, reducing infrastructure configuration drift by 40%.</p>
-                            <p>Optimized CI/CD pipelines with GitOps, Azure DevOps, and HashiCorp Vault across 50+ microservices, reducing deployment cycle time by 40%.</p>
-                            <p>Implemented container image scanning and hardening controls, reducing critical security vulnerabilities by 75% and improving release security posture.</p>
-                            <p>Migrated 100+ repositories from SVN to GitLab through automation, improving developer productivity and reducing maintenance overhead by 60%.</p>
-                            <p>Built observability and alerting with Prometheus and Grafana, achieving 99.9% service uptime and reducing incident response time by 75%.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">November 2021 - Present</span></div>
+                    <header class="section-head">
+                        <p class="section-kicker">git log --career</p>
+                        <h2>Experience</h2>
+                        <p class="section-lede">From UI development to multi-cloud platform engineering. Tip: click any highlighted skill in the Skills section to see where I've used it.</p>
+                    </header>
+                    <div id="skillFilterBanner" class="skill-filter-banner" role="status" hidden>
+                        <i class="fas fa-filter" aria-hidden="true"></i>
+                        <span>Showing where I used <strong id="skillFilterTerm"></strong> · <span id="skillFilterCount"></span></span>
+                        <button type="button" id="skillFilterClear" class="btn-ghost"><i class="fas fa-xmark" aria-hidden="true"></i>Clear</button>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Senior Cloud DevOps Engineer</h3>
-                            <div class="subheading mb-3">TomTom, Pune</div>
-                            <p>Architected optimized Azure and OpenStack infrastructure with rightsizing and autoscaling, delivering $148K annual cloud cost savings.</p>
-                            <p>Designed multi-region AKS platform architecture with 99.9% uptime SLA and reduced cloud costs by 25% through capacity optimization.</p>
-                            <p>Automated provisioning workflows using Terraform and Ansible, reducing environment setup time from 4 hours to 6 minutes.</p>
-                            <p>Implemented proactive monitoring and alerting via Prometheus and Grafana, improving critical incident response by 85% and reducing MTTR to 18 minutes.</p>
-                            <p>Led 5+ cloud transformation initiatives with globally distributed teams, enabling 90% faster feature delivery cycles.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">October 2018 - September 2021</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">DevOps Specialist</h3>
-                            <div class="subheading mb-3">Pitney Bowes</div>
-                            <p>Designed and maintained CI/CD pipelines using GitLab CI/CD, Jenkins, and Puppet for hybrid AWS and on-premises application delivery across 30+ services.</p>
-                            <p>Developed AWS Lambda and Python Boto3 automation to reduce manual operations by 70% and lower cloud operating costs by $3K per month.</p>
-                            <p>Implemented ECS-based container deployment patterns to improve release consistency, scalability, and deployment reliability.</p>
-                            <p>Strengthened cloud security controls through MFA, IAM policy hardening, and network security group best practices to ensure compliance requirements.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">January 2018 - October 2018</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Technical Associate</h3>
-                            <div class="subheading mb-3">Sears Holding India</div>
-                            <p>Built deployment and operations tooling that improved application performance by 30% and increased platform stability in production.</p>
-                            <p>Reduced failed order processing turnaround for core e-commerce workflows from one month to two days through automation and process redesign.</p>
-                            <p>Managed AWS infrastructure components including EC2, ELB, VPC, S3, IAM, and Lambda for high-traffic production workloads.</p>
-                            <p>Implemented Nagios-based infrastructure monitoring for CPU, memory, disk, and service health to improve operational visibility.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2015 - January 2018</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Freelancer</h3>
-                            <div class="subheading mb-3">One Chits Private Ltd</div>
-                            <p>Collaborated with business stakeholders to gather requirements and deliver browser-based offline-capable PHP applications integrated with MySQL backend services.</p>
-                            <p>Delivered 5+ end-to-end freelance projects with strong client satisfaction, maintainable code quality, and production-ready releases.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2014 - August 2015</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">UI Developer</h3>
-                            <div class="subheading mb-3">Inbox Masters Systems Private Ltd</div>
-                            <p>Developed internal web interfaces using PHP, JavaScript, HTML/CSS, and jQuery to streamline marketing operations and campaign execution.</p>
-                            <p>Built customer-facing PHP interfaces that increased engagement and improved average user time on page by 2 minutes.</p>
-                            <p>Improved database performance by 20% through query optimization, materialized views, and stored procedures.</p>
-                            <p>Improved application code efficiency by 30% by applying optimized data structures and maintainable coding standards.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">May 2012 - June 2014</span></div>
-                    </div>
+                    <ol class="timeline">
+                        <li class="timeline-item" data-start="2021-11" data-end="present">
+                            <details class="timeline-card" open>
+                                <summary class="timeline-summary">
+                                    <h3 class="tl-title">Senior Cloud DevOps Engineer</h3>
+                                    <span class="tl-org">Luxoft · Wrocław, Poland</span>
+                                    <span class="tl-meta"><span>Nov 2021 — Present</span><span class="tl-duration" data-duration></span><i class="fas fa-chevron-down tl-toggle" aria-hidden="true"></i></span>
+                                </summary>
+                                <div class="tl-body">
+                                    <ul class="impact-chips" aria-label="Key impact">
+                                        <li>−40% config drift</li>
+                                        <li>−40% deploy cycle</li>
+                                        <li>−75% critical CVEs</li>
+                                        <li>99.9% uptime</li>
+                                        <li>100+ repos migrated</li>
+                                    </ul>
+                                    <ul class="tl-points">
+                                        <li>Architected and operated multi-cloud infrastructure across AWS and Azure using Terraform and Kubernetes to improve scalability, fault tolerance, and platform resilience.</li>
+                                        <li>Designed multi-AZ EKS environments and implemented automated drift detection, reducing infrastructure configuration drift by 40%.</li>
+                                        <li>Optimized CI/CD pipelines with GitOps, Azure DevOps, and HashiCorp Vault across 50+ microservices, reducing deployment cycle time by 40%.</li>
+                                        <li>Implemented container image scanning and hardening controls, reducing critical security vulnerabilities by 75% and improving release security posture.</li>
+                                        <li>Migrated 100+ repositories from SVN to GitLab through automation, improving developer productivity and reducing maintenance overhead by 60%.</li>
+                                        <li>Built observability and alerting with Prometheus and Grafana, achieving 99.9% service uptime and reducing incident response time by 75%.</li>
+                                    </ul>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="timeline-item" data-start="2018-10" data-end="2021-09">
+                            <details class="timeline-card" open>
+                                <summary class="timeline-summary">
+                                    <h3 class="tl-title">Senior Cloud DevOps Engineer</h3>
+                                    <span class="tl-org">TomTom · Pune</span>
+                                    <span class="tl-meta"><span>Oct 2018 — Sep 2021</span><span class="tl-duration" data-duration></span><i class="fas fa-chevron-down tl-toggle" aria-hidden="true"></i></span>
+                                </summary>
+                                <div class="tl-body">
+                                    <ul class="impact-chips" aria-label="Key impact">
+                                        <li>$148K/yr saved</li>
+                                        <li>4h → 6min provisioning</li>
+                                        <li>MTTR 18 min</li>
+                                        <li>−25% cloud cost</li>
+                                    </ul>
+                                    <ul class="tl-points">
+                                        <li>Architected optimized Azure and OpenStack infrastructure with rightsizing and autoscaling, delivering $148K annual cloud cost savings.</li>
+                                        <li>Designed multi-region AKS platform architecture with 99.9% uptime SLA and reduced cloud costs by 25% through capacity optimization.</li>
+                                        <li>Automated provisioning workflows using Terraform and Ansible, reducing environment setup time from 4 hours to 6 minutes.</li>
+                                        <li>Implemented proactive monitoring and alerting via Prometheus and Grafana, improving critical incident response by 85% and reducing MTTR to 18 minutes.</li>
+                                        <li>Led 5+ cloud transformation initiatives with globally distributed teams, enabling 90% faster feature delivery cycles.</li>
+                                    </ul>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="timeline-item" data-start="2018-01" data-end="2018-10">
+                            <details class="timeline-card">
+                                <summary class="timeline-summary">
+                                    <h3 class="tl-title">DevOps Specialist</h3>
+                                    <span class="tl-org">Pitney Bowes</span>
+                                    <span class="tl-meta"><span>Jan 2018 — Oct 2018</span><span class="tl-duration" data-duration></span><i class="fas fa-chevron-down tl-toggle" aria-hidden="true"></i></span>
+                                </summary>
+                                <div class="tl-body">
+                                    <ul class="impact-chips" aria-label="Key impact">
+                                        <li>30+ services</li>
+                                        <li>−70% manual ops</li>
+                                        <li>−$3K/month</li>
+                                    </ul>
+                                    <ul class="tl-points">
+                                        <li>Designed and maintained CI/CD pipelines using GitLab CI/CD, Jenkins, and Puppet for hybrid AWS and on-premises application delivery across 30+ services.</li>
+                                        <li>Developed AWS Lambda and Python Boto3 automation to reduce manual operations by 70% and lower cloud operating costs by $3K per month.</li>
+                                        <li>Implemented ECS-based container deployment patterns to improve release consistency, scalability, and deployment reliability.</li>
+                                        <li>Strengthened cloud security controls through MFA, IAM policy hardening, and network security group best practices to ensure compliance requirements.</li>
+                                    </ul>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="timeline-item" data-start="2015-09" data-end="2018-01">
+                            <details class="timeline-card">
+                                <summary class="timeline-summary">
+                                    <h3 class="tl-title">Technical Associate</h3>
+                                    <span class="tl-org">Sears Holding India</span>
+                                    <span class="tl-meta"><span>Sep 2015 — Jan 2018</span><span class="tl-duration" data-duration></span><i class="fas fa-chevron-down tl-toggle" aria-hidden="true"></i></span>
+                                </summary>
+                                <div class="tl-body">
+                                    <ul class="impact-chips" aria-label="Key impact">
+                                        <li>+30% app performance</li>
+                                        <li>1 month → 2 days</li>
+                                    </ul>
+                                    <ul class="tl-points">
+                                        <li>Built deployment and operations tooling that improved application performance by 30% and increased platform stability in production.</li>
+                                        <li>Reduced failed order processing turnaround for core e-commerce workflows from one month to two days through automation and process redesign.</li>
+                                        <li>Managed AWS infrastructure components including EC2, ELB, VPC, S3, IAM, and Lambda for high-traffic production workloads.</li>
+                                        <li>Implemented Nagios-based infrastructure monitoring for CPU, memory, disk, and service health to improve operational visibility.</li>
+                                    </ul>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="timeline-item" data-start="2014-07" data-end="2015-08">
+                            <details class="timeline-card">
+                                <summary class="timeline-summary">
+                                    <h3 class="tl-title">Freelancer</h3>
+                                    <span class="tl-org">One Chits Private Ltd</span>
+                                    <span class="tl-meta"><span>Jul 2014 — Aug 2015</span><span class="tl-duration" data-duration></span><i class="fas fa-chevron-down tl-toggle" aria-hidden="true"></i></span>
+                                </summary>
+                                <div class="tl-body">
+                                    <ul class="impact-chips" aria-label="Key impact">
+                                        <li>5+ projects delivered</li>
+                                    </ul>
+                                    <ul class="tl-points">
+                                        <li>Collaborated with business stakeholders to gather requirements and deliver browser-based offline-capable PHP applications integrated with MySQL backend services.</li>
+                                        <li>Delivered 5+ end-to-end freelance projects with strong client satisfaction, maintainable code quality, and production-ready releases.</li>
+                                    </ul>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="timeline-item" data-start="2012-05" data-end="2014-06">
+                            <details class="timeline-card">
+                                <summary class="timeline-summary">
+                                    <h3 class="tl-title">UI Developer</h3>
+                                    <span class="tl-org">Inbox Masters Systems Private Ltd</span>
+                                    <span class="tl-meta"><span>May 2012 — Jun 2014</span><span class="tl-duration" data-duration></span><i class="fas fa-chevron-down tl-toggle" aria-hidden="true"></i></span>
+                                </summary>
+                                <div class="tl-body">
+                                    <ul class="impact-chips" aria-label="Key impact">
+                                        <li>+20% DB performance</li>
+                                        <li>+30% code efficiency</li>
+                                    </ul>
+                                    <ul class="tl-points">
+                                        <li>Developed internal web interfaces using PHP, JavaScript, HTML/CSS, and jQuery to streamline marketing operations and campaign execution.</li>
+                                        <li>Built customer-facing PHP interfaces that increased engagement and improved average user time on page by 2 minutes.</li>
+                                        <li>Improved database performance by 20% through query optimization, materialized views, and stored procedures.</li>
+                                        <li>Improved application code efficiency by 30% by applying optimized data structures and maintainable coding standards.</li>
+                                    </ul>
+                                </div>
+                            </details>
+                        </li>
+                    </ol>
                 </div>
             </section>
-            <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">D. Y. Patil College of Engineering (DYPCOE), Akurdi, Pune</h3>
-                            <div class="subheading mb-3">Bachelor's Degree</div>
-                            <div>Computer Engineering</div>
-                            <p>First Class</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2007 - August 2011</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Progressive Education Society's Modern College of Arts, Science and Commerce, Pune</h3>
-                            <div class="subheading mb-3">HSC</div>
-                            <p>First Class</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">June 2005 - May 2007</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Hindustan Antibiotics School</h3>
-                            <div class="subheading mb-3">SSC</div>
-                            <p>Mathematics and Computer Science</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">April 1995 - April 2005</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
+
             <!-- Skills-->
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <!--                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                            <ul class="list-inline dev-icons">
-                            <li class="list-inline-item"><i class="fab fa-p"></i></li>
-                            <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                            <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                            <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                            <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                            <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                            <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                            <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                            <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                            <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                            <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                            <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-                            </ul>-->
-                    <div class="skill-grid" role="list" aria-label="Technical skills by category">
-                        <article class="skill-card" role="listitem">
-                            <h3><i class="fas fa-cloud text-primary me-2" aria-hidden="true"></i>Cloud</h3>
+                    <header class="section-head">
+                        <p class="section-kicker">cat skills.yaml</p>
+                        <h2>Skills</h2>
+                        <p class="section-lede">Skills with a counter are clickable — they jump to the roles where I applied them.</p>
+                    </header>
+                    <div class="skill-grid">
+                        <article class="skill-card">
+                            <h3><span class="skill-icon"><i class="fas fa-cloud" aria-hidden="true"></i></span>Cloud</h3>
                             <div class="skill-tags">
                                 <span class="skill-tag">EC2</span>
                                 <span class="skill-tag">EKS</span>
@@ -231,8 +353,8 @@
                                 <span class="skill-tag">Azure DevOps</span>
                             </div>
                         </article>
-                        <article class="skill-card" role="listitem">
-                            <h3><i class="fas fa-code text-primary me-2" aria-hidden="true"></i>Infrastructure as Code</h3>
+                        <article class="skill-card">
+                            <h3><span class="skill-icon"><i class="fas fa-code" aria-hidden="true"></i></span>Infrastructure as Code</h3>
                             <div class="skill-tags">
                                 <span class="skill-tag">Terraform</span>
                                 <span class="skill-tag">Azure Bicep</span>
@@ -243,8 +365,8 @@
                                 <span class="skill-tag">Helm</span>
                             </div>
                         </article>
-                        <article class="skill-card" role="listitem">
-                            <h3><i class="fas fa-cubes text-primary me-2" aria-hidden="true"></i>Containers</h3>
+                        <article class="skill-card">
+                            <h3><span class="skill-icon"><i class="fas fa-cubes" aria-hidden="true"></i></span>Containers</h3>
                             <div class="skill-tags">
                                 <span class="skill-tag">Kubernetes</span>
                                 <span class="skill-tag">Docker</span>
@@ -253,8 +375,8 @@
                                 <span class="skill-tag">ECS</span>
                             </div>
                         </article>
-                        <article class="skill-card" role="listitem">
-                            <h3><i class="fas fa-infinity text-primary me-2" aria-hidden="true"></i>CI/CD</h3>
+                        <article class="skill-card">
+                            <h3><span class="skill-icon"><i class="fas fa-infinity" aria-hidden="true"></i></span>CI/CD</h3>
                             <div class="skill-tags">
                                 <span class="skill-tag">GitHub Actions</span>
                                 <span class="skill-tag">GitLab CI/CD</span>
@@ -264,17 +386,18 @@
                                 <span class="skill-tag">ArgoCD</span>
                             </div>
                         </article>
-                        <article class="skill-card" role="listitem">
-                            <h3><i class="fas fa-chart-line text-primary me-2" aria-hidden="true"></i>Monitoring</h3>
+                        <article class="skill-card">
+                            <h3><span class="skill-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></span>Observability</h3>
                             <div class="skill-tags">
                                 <span class="skill-tag">Prometheus</span>
                                 <span class="skill-tag">Grafana</span>
                                 <span class="skill-tag">CloudWatch</span>
                                 <span class="skill-tag">ELK</span>
+                                <span class="skill-tag">Nagios</span>
                             </div>
                         </article>
-                        <article class="skill-card" role="listitem">
-                            <h3><i class="fas fa-shield-halved text-primary me-2" aria-hidden="true"></i>Infra &amp; Security</h3>
+                        <article class="skill-card">
+                            <h3><span class="skill-icon"><i class="fas fa-shield-halved" aria-hidden="true"></i></span>Infra &amp; Security</h3>
                             <div class="skill-tags">
                                 <span class="skill-tag">Linux</span>
                                 <span class="skill-tag">Confluent Kafka</span>
@@ -284,16 +407,16 @@
                                 <span class="skill-tag">OWASP</span>
                             </div>
                         </article>
-                        <article class="skill-card" role="listitem">
-                            <h3><i class="fas fa-terminal text-primary me-2" aria-hidden="true"></i>Languages</h3>
+                        <article class="skill-card">
+                            <h3><span class="skill-icon"><i class="fas fa-terminal" aria-hidden="true"></i></span>Languages</h3>
                             <div class="skill-tags">
                                 <span class="skill-tag">Python</span>
                                 <span class="skill-tag">Bash</span>
                                 <span class="skill-tag">Boto3</span>
                             </div>
                         </article>
-                        <article class="skill-card" role="listitem">
-                            <h3><i class="fas fa-database text-primary me-2" aria-hidden="true"></i>Databases</h3>
+                        <article class="skill-card">
+                            <h3><span class="skill-icon"><i class="fas fa-database" aria-hidden="true"></i></span>Databases</h3>
                             <div class="skill-tags">
                                 <span class="skill-tag">MySQL</span>
                                 <span class="skill-tag">SQL Server</span>
@@ -304,225 +427,328 @@
                     </div>
                 </div>
             </section>
-            <hr class="m-0" />
-            <!-- certifications-->
+
+            <!-- Projects-->
+            <section class="resume-section" id="projects">
+                <div class="resume-section-content">
+                    <header class="section-head">
+                        <p class="section-kicker">gh repo list sagary2j --featured</p>
+                        <h2>Projects</h2>
+                        <p class="section-lede">Hands-on infrastructure work from my GitHub. Stars and activity are pulled live from the GitHub API.</p>
+                    </header>
+                    <div class="project-grid">
+                        <a class="project-card" data-repo="city-population-ak8s" href="https://github.com/sagary2j/city-population-ak8s" target="_blank" rel="noopener noreferrer">
+                            <h3 class="project-head"><i class="fas fa-book-bookmark" aria-hidden="true"></i>city-population-ak8s<i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></h3>
+                            <p class="project-desc">Production-ready FastAPI + Elasticsearch service with Docker, Helm, Terraform (AKS), GitHub Actions CI/CD and ArgoCD GitOps deployment.</p>
+                            <div class="blog-tags"><span class="blog-tag">aks</span><span class="blog-tag">helm</span><span class="blog-tag">argocd</span><span class="blog-tag">terraform</span></div>
+                            <div class="project-meta"><span><span class="lang-dot" style="--lang-color: #844fba"></span>HCL</span><span data-stars hidden></span><span data-updated hidden></span></div>
+                        </a>
+                        <a class="project-card" data-repo="ELK-Stack-Kubernetes-minikube" href="https://github.com/sagary2j/ELK-Stack-Kubernetes-minikube" target="_blank" rel="noopener noreferrer">
+                            <h3 class="project-head"><i class="fas fa-book-bookmark" aria-hidden="true"></i>ELK-Stack-Kubernetes-minikube<i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></h3>
+                            <p class="project-desc">ELK stack deployment to a Kubernetes cluster using a Minikube single-node architecture — companion to my most-read DEV article.</p>
+                            <div class="blog-tags"><span class="blog-tag">kubernetes</span><span class="blog-tag">elk</span><span class="blog-tag">observability</span></div>
+                            <div class="project-meta"><span><span class="lang-dot" style="--lang-color: #cb171e"></span>YAML</span><span data-stars hidden></span><span data-updated hidden></span></div>
+                        </a>
+                        <a class="project-card" data-repo="python-flask-hello-world" href="https://github.com/sagary2j/python-flask-hello-world" target="_blank" rel="noopener noreferrer">
+                            <h3 class="project-head"><i class="fas fa-book-bookmark" aria-hidden="true"></i>python-flask-hello-world<i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></h3>
+                            <p class="project-desc">Python Flask application deployed to AWS ECS with infrastructure defined in Terraform.</p>
+                            <div class="blog-tags"><span class="blog-tag">aws</span><span class="blog-tag">ecs</span><span class="blog-tag">terraform</span></div>
+                            <div class="project-meta"><span><span class="lang-dot" style="--lang-color: #844fba"></span>HCL</span><span data-stars hidden></span><span data-updated hidden></span></div>
+                        </a>
+                        <a class="project-card" data-repo="atlas-mongodb-terraform" href="https://github.com/sagary2j/atlas-mongodb-terraform" target="_blank" rel="noopener noreferrer">
+                            <h3 class="project-head"><i class="fas fa-book-bookmark" aria-hidden="true"></i>atlas-mongodb-terraform<i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></h3>
+                            <p class="project-desc">Provision a MongoDB Atlas cluster on AWS end-to-end with Terraform.</p>
+                            <div class="blog-tags"><span class="blog-tag">mongodb</span><span class="blog-tag">aws</span><span class="blog-tag">terraform</span></div>
+                            <div class="project-meta"><span><span class="lang-dot" style="--lang-color: #844fba"></span>HCL</span><span data-stars hidden></span><span data-updated hidden></span></div>
+                        </a>
+                        <a class="project-card" data-repo="aws-alb-pathbased-app" href="https://github.com/sagary2j/aws-alb-pathbased-app" target="_blank" rel="noopener noreferrer">
+                            <h3 class="project-head"><i class="fas fa-book-bookmark" aria-hidden="true"></i>aws-alb-pathbased-app<i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></h3>
+                            <p class="project-desc">Terraform code to set up a path-based routing Application Load Balancer in AWS.</p>
+                            <div class="blog-tags"><span class="blog-tag">aws</span><span class="blog-tag">alb</span><span class="blog-tag">terraform</span></div>
+                            <div class="project-meta"><span><span class="lang-dot" style="--lang-color: #844fba"></span>HCL</span><span data-stars hidden></span><span data-updated hidden></span></div>
+                        </a>
+                        <a class="project-card" data-repo="terraform-in-21-days" href="https://github.com/sagary2j/terraform-in-21-days" target="_blank" rel="noopener noreferrer">
+                            <h3 class="project-head"><i class="fas fa-book-bookmark" aria-hidden="true"></i>terraform-in-21-days<i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></h3>
+                            <p class="project-desc">Learning Terraform in 21 days with a hands-on, incrementally built project.</p>
+                            <div class="blog-tags"><span class="blog-tag">terraform</span><span class="blog-tag">iac</span><span class="blog-tag">aws</span></div>
+                            <div class="project-meta"><span><span class="lang-dot" style="--lang-color: #844fba"></span>HCL</span><span data-stars hidden></span><span data-updated hidden></span></div>
+                        </a>
+                    </div>
+                    <p class="section-foot"><a href="https://github.com/sagary2j?tab=repositories" target="_blank" rel="noopener noreferrer">Browse all repositories <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>
+                </div>
+            </section>
+
+            <!-- Certifications-->
             <section class="resume-section" id="certifications">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Certifications</h2>
-                    <div class="dynamic-toolbar" role="group" aria-label="Filter certifications">
-                        <input id="certSearch" class="dynamic-search" type="search" placeholder="Search certifications" aria-label="Search certifications" />
-                        <select id="certSourceFilter" class="dynamic-select" aria-label="Filter certifications by source">
-                            <option value="all">All providers</option>
-                            <option value="aws">AWS</option>
-                            <option value="aws">AWS</option>
-                            <option value="microsoft">Microsoft</option>
-                            <option value="google">Google</option>
-                            <option value="gitlab">GitLab</option>
-                            <option value="other">CNCF / Linux Foundation</option>
-                            <option value="other">Other</option>
-                        </select>
-                        <span id="certCount" class="dynamic-count" aria-live="polite"></span>
+                    <header class="section-head">
+                        <p class="section-kicker">ls ~/certs --verified</p>
+                        <h2>Certifications</h2>
+                    </header>
+                    <div class="toolbar" role="group" aria-label="Filter certifications">
+                        <label class="search-field">
+                            <i class="fas fa-magnifying-glass" aria-hidden="true"></i>
+                            <input id="certSearch" class="search-input" type="search" placeholder="Search certifications" aria-label="Search certifications" />
+                        </label>
+                        <div id="certChips" class="chip-group" aria-label="Filter by provider"></div>
+                        <span id="certCount" class="result-count" aria-live="polite"></span>
                     </div>
-                    <div id="certList" class="cert-grid" role="list" aria-label="Professional certifications">
-                        <article class="cert-card" role="listitem" data-filter-item data-provider="cncf">
-                            <p class="cert-meta"><i class="fas fa-certificate me-2" aria-hidden="true"></i>CNCF / Linux Foundation</p>
+                    <div id="certList" class="cert-grid">
+                        <article class="cert-card" data-filter-item data-provider="cncf">
+                            <p class="cert-provider"><i class="fas fa-dharmachakra" aria-hidden="true"></i>CNCF / Linux Foundation</p>
                             <h3>KCNA: Kubernetes and Cloud Native Associate</h3>
-                            <a class="cert-link" href="https://www.credly.com/badges/42bed36c-e114-46ac-bdcc-93a98b6ff20c" target="_blank" rel="noopener noreferrer">View certificate <i class="fas fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></a>
+                            <a class="cert-link" href="https://www.credly.com/badges/42bed36c-e114-46ac-bdcc-93a98b6ff20c" target="_blank" rel="noopener noreferrer">Verify on Credly <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                         </article>
-                        <article class="cert-card" role="listitem" data-filter-item data-provider="aws">
-                            <p class="cert-meta"><i class="fas fa-award me-2" aria-hidden="true"></i>AWS</p>
-                            <h3>AWS Certified DevOps Engineer (Professional)</h3>
-                            <a class="cert-link" href="https://www.credly.com/badges/35603da9-8f43-422b-be67-19a733be4827" target="_blank" rel="noopener noreferrer">View certificate <i class="fas fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></a>
+                        <article class="cert-card" data-filter-item data-provider="aws">
+                            <p class="cert-provider"><i class="fab fa-aws" aria-hidden="true"></i>AWS</p>
+                            <h3>AWS Certified DevOps Engineer – Professional</h3>
+                            <a class="cert-link" href="https://www.credly.com/badges/35603da9-8f43-422b-be67-19a733be4827" target="_blank" rel="noopener noreferrer">Verify on Credly <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                         </article>
-                        <article class="cert-card" role="listitem" data-filter-item data-provider="aws">
-                            <p class="cert-meta"><i class="fas fa-award me-2" aria-hidden="true"></i>AWS</p>
+                        <article class="cert-card" data-filter-item data-provider="aws">
+                            <p class="cert-provider"><i class="fab fa-aws" aria-hidden="true"></i>AWS</p>
                             <h3>AWS Certified Cloud Practitioner</h3>
-                            <a class="cert-link" href="https://www.credly.com/badges/02320f7f-a942-4e49-86ae-e02330206693" target="_blank" rel="noopener noreferrer">View certificate <i class="fas fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></a>
+                            <a class="cert-link" href="https://www.credly.com/badges/02320f7f-a942-4e49-86ae-e02330206693" target="_blank" rel="noopener noreferrer">Verify on Credly <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                         </article>
-                        <article class="cert-card" role="listitem" data-filter-item data-provider="microsoft">
-                            <p class="cert-meta"><i class="fas fa-award me-2" aria-hidden="true"></i>Microsoft</p>
+                        <article class="cert-card" data-filter-item data-provider="microsoft">
+                            <p class="cert-provider"><i class="fab fa-microsoft" aria-hidden="true"></i>Microsoft</p>
                             <h3>Microsoft Certified Azure Architect</h3>
-                            <a class="cert-link" href="https://www.credly.com/search?query=Microsoft%20Certified%20Azure%20Architect%20Sagar%20Ravkhande" target="_blank" rel="noopener noreferrer">View certificate <i class="fas fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></a>
+                            <a class="cert-link" href="https://www.credly.com/search?query=Microsoft%20Certified%20Azure%20Architect%20Sagar%20Ravkhande" target="_blank" rel="noopener noreferrer">Verify on Credly <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                         </article>
-                        <article class="cert-card" role="listitem" data-filter-item data-provider="microsoft">
-                            <p class="cert-meta"><i class="fas fa-award me-2" aria-hidden="true"></i>Microsoft</p>
+                        <article class="cert-card" data-filter-item data-provider="microsoft">
+                            <p class="cert-provider"><i class="fab fa-microsoft" aria-hidden="true"></i>Microsoft</p>
                             <h3>Microsoft Certified Azure Developer</h3>
-                            <a class="cert-link" href="https://www.credly.com/search?query=Microsoft%20Certified%20Azure%20Developer%20Sagar%20Ravkhande" target="_blank" rel="noopener noreferrer">View certificate <i class="fas fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></a>
+                            <a class="cert-link" href="https://www.credly.com/search?query=Microsoft%20Certified%20Azure%20Developer%20Sagar%20Ravkhande" target="_blank" rel="noopener noreferrer">Verify on Credly <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                         </article>
-                        <article class="cert-card" role="listitem" data-filter-item data-provider="microsoft">
-                            <p class="cert-meta"><i class="fas fa-award me-2" aria-hidden="true"></i>Microsoft</p>
+                        <article class="cert-card" data-filter-item data-provider="microsoft">
+                            <p class="cert-provider"><i class="fab fa-microsoft" aria-hidden="true"></i>Microsoft</p>
                             <h3>Microsoft Certified DevOps Engineer</h3>
-                            <a class="cert-link" href="https://www.credly.com/search?query=Microsoft%20Certified%20DevOps%20Engineer%20Sagar%20Ravkhande" target="_blank" rel="noopener noreferrer">View certificate <i class="fas fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></a>
+                            <a class="cert-link" href="https://www.credly.com/search?query=Microsoft%20Certified%20DevOps%20Engineer%20Sagar%20Ravkhande" target="_blank" rel="noopener noreferrer">Verify on Credly <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                         </article>
-                        <article class="cert-card" role="listitem" data-filter-item data-provider="microsoft">
-                            <p class="cert-meta"><i class="fas fa-award me-2" aria-hidden="true"></i>Microsoft</p>
+                        <article class="cert-card" data-filter-item data-provider="microsoft">
+                            <p class="cert-provider"><i class="fab fa-microsoft" aria-hidden="true"></i>Microsoft</p>
                             <h3>Microsoft Certified: Azure Administrator Associate</h3>
-                            <a class="cert-link" href="https://www.credly.com/search?query=Azure%20Administrator%20Associate%20Sagar%20Ravkhande" target="_blank" rel="noopener noreferrer">View certificate <i class="fas fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></a>
+                            <a class="cert-link" href="https://www.credly.com/search?query=Azure%20Administrator%20Associate%20Sagar%20Ravkhande" target="_blank" rel="noopener noreferrer">Verify on Credly <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                         </article>
-                        <article class="cert-card" role="listitem" data-filter-item data-provider="gitlab">
-                            <p class="cert-meta"><i class="fas fa-award me-2" aria-hidden="true"></i>GitLab</p>
+                        <article class="cert-card" data-filter-item data-provider="gitlab">
+                            <p class="cert-provider"><i class="fab fa-gitlab" aria-hidden="true"></i>GitLab</p>
                             <h3>GitLab Certified Git Associate</h3>
-                            <a class="cert-link" href="https://www.credly.com/badges/074648d2-7438-4ae2-86ca-ba9498047881" target="_blank" rel="noopener noreferrer">View certificate <i class="fas fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></a>
+                            <a class="cert-link" href="https://www.credly.com/badges/074648d2-7438-4ae2-86ca-ba9498047881" target="_blank" rel="noopener noreferrer">Verify on Credly <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                         </article>
-                        <article class="cert-card" role="listitem" data-filter-item data-provider="gitlab">
-                            <p class="cert-meta"><i class="fas fa-award me-2" aria-hidden="true"></i>GitLab</p>
+                        <article class="cert-card" data-filter-item data-provider="gitlab">
+                            <p class="cert-provider"><i class="fab fa-gitlab" aria-hidden="true"></i>GitLab</p>
                             <h3>GitLab Certified CI/CD Associate</h3>
-                            <a class="cert-link" href="https://www.credly.com/badges/4846c995-50ab-4f69-96f3-9df3c0a10fc7" target="_blank" rel="noopener noreferrer">View certificate <i class="fas fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></a>
+                            <a class="cert-link" href="https://www.credly.com/badges/4846c995-50ab-4f69-96f3-9df3c0a10fc7" target="_blank" rel="noopener noreferrer">Verify on Credly <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                         </article>
-                        <article class="cert-card" role="listitem" data-filter-item data-provider="akamai">
-                            <p class="cert-meta"><i class="fas fa-award me-2" aria-hidden="true"></i>Akamai</p>
+                        <article class="cert-card" data-filter-item data-provider="akamai">
+                            <p class="cert-provider"><i class="fas fa-bolt" aria-hidden="true"></i>Akamai</p>
                             <h3>Akamai Web Performance Foundations</h3>
-                            <a class="cert-link" href="https://www.credly.com/badges/2111bde4-2167-44c7-8b2c-89bb91943b80" target="_blank" rel="noopener noreferrer">View certificate <i class="fas fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></a>
+                            <a class="cert-link" href="https://www.credly.com/badges/2111bde4-2167-44c7-8b2c-89bb91943b80" target="_blank" rel="noopener noreferrer">Verify on Credly <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                         </article>
-                        <article class="cert-card" role="listitem" data-filter-item data-provider="google">
-                            <p class="cert-meta"><i class="fas fa-award me-2" aria-hidden="true"></i>Google</p>
-                            <h3>Cloud Digital Leader Certification</h3>
-                            <a class="cert-link" href="https://www.credly.com/badges/d8effea3-b982-4a79-9482-4fd8e220a04b" target="_blank" rel="noopener noreferrer">View certificate <i class="fas fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></a>
-                        </article>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Awards-->
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Awards</h2>
-                    <div class="award-grid" role="list" aria-label="Awards and recognition">
-                        <article class="award-card" role="listitem">
-                            <h3><i class="fas fa-star text-warning me-2" aria-hidden="true"></i>Star Performer of the Year</h3>
-                            <p>Inbox Masters Systems Private Ltd.</p>
-                        </article>
-                        <article class="award-card" role="listitem">
-                            <h3><i class="fas fa-trophy text-warning me-2" aria-hidden="true"></i>Team Excellence Award</h3>
-                            <p>Sears</p>
+                        <article class="cert-card" data-filter-item data-provider="google">
+                            <p class="cert-provider"><i class="fab fa-google" aria-hidden="true"></i>Google Cloud</p>
+                            <h3>Cloud Digital Leader</h3>
+                            <a class="cert-link" href="https://www.credly.com/badges/d8effea3-b982-4a79-9482-4fd8e220a04b" target="_blank" rel="noopener noreferrer">Verify on Credly <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                         </article>
                     </div>
+                    <p class="empty-state" data-empty hidden>No certifications match that search.</p>
                 </div>
             </section>
-            <hr class="m-0" />
+
             <!-- Blogs-->
             <section class="resume-section" id="blogs">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Blogs</h2>
-                    <div class="dynamic-toolbar" role="group" aria-label="Search blogs">
-                        <input id="blogSearch" class="dynamic-search" type="search" placeholder="Search blog titles" aria-label="Search blogs" />
-                        <span id="blogCount" class="dynamic-count" aria-live="polite"></span>
+                    <header class="section-head">
+                        <p class="section-kicker">curl dev.to/api/articles?username=sagary2j</p>
+                        <h2>Blogs</h2>
+                    </header>
+                    <div class="toolbar" role="group" aria-label="Search and sort blogs">
+                        <label class="search-field">
+                            <i class="fas fa-magnifying-glass" aria-hidden="true"></i>
+                            <input id="blogSearch" class="search-input" type="search" placeholder="Search titles and tags" aria-label="Search blogs" />
+                        </label>
+                        <div id="blogSort" class="chip-group" aria-label="Sort blogs">
+                            <button type="button" class="chip" data-sort="date" aria-pressed="true">Newest</button>
+                            <button type="button" class="chip" data-sort="reactions" aria-pressed="false">Most liked</button>
+                        </div>
+                        <span id="blogSource" class="live-badge"><span class="dot" aria-hidden="true"></span>static</span>
+                        <span id="blogCount" class="result-count" aria-live="polite"></span>
                     </div>
-                    <div id="blogList" class="blog-grid" role="list" aria-label="Published technical blogs">
-                        <article class="blog-card" role="listitem" data-filter-item>
-                            <p class="blog-meta"><i class="fas fa-calendar-alt me-2" aria-hidden="true"></i>DEV Community</p>
-                            <h3>
-                                <a href="https://dev.to/sagary2j/elk-stack-deployment-using-minikube-single-node-architecture-16cl" target="_blank" rel="noopener noreferrer">ELK Stack Deployment Using Minikube Single Node Architecture</a>
-                            </h3>
-                            <p>Step-by-step implementation of an ELK stack in a compact Kubernetes environment for logs and observability.</p>
-                            <div class="blog-tags">
-                                <span class="blog-tag">Kubernetes</span>
-                                <span class="blog-tag">ELK</span>
-                                <span class="blog-tag">Observability</span>
-                            </div>
+                    <div id="blogList" class="blog-grid">
+                        <article class="blog-card" data-filter-item data-date="2025-03-31" data-reactions="9">
+                            <p class="blog-meta"><span><i class="far fa-calendar" aria-hidden="true"></i>Mar 2025</span><span><i class="far fa-clock" aria-hidden="true"></i>4 min read</span></p>
+                            <h3><a href="https://dev.to/aws-builders/flask-application-deployment-using-aws-ecs-and-aws-dynamodb-with-terraform-45oh" target="_blank" rel="noopener noreferrer">Flask Application Deployment using AWS ECS and AWS DynamoDB with Terraform</a></h3>
+                            <p>Deploying a containerised Flask app on AWS ECS backed by DynamoDB, fully provisioned with Terraform.</p>
+                            <div class="blog-tags"><span class="blog-tag">aws</span><span class="blog-tag">terraform</span><span class="blog-tag">devops</span></div>
                         </article>
-                        <article class="blog-card" role="listitem" data-filter-item>
-                            <p class="blog-meta"><i class="fas fa-code-branch me-2" aria-hidden="true"></i>DEV Community</p>
-                            <h3>
-                                <a href="https://dev.to/sagary2j/migrating-a-subversionsvn-repository-to-gitgitlabgithub-repository-2me3" target="_blank" rel="noopener noreferrer">Migrating a Subversion (SVN) Repository to Git, GitLab, and GitHub</a>
-                            </h3>
-                            <p>A practical migration playbook to modernize source control with reduced risk and better team collaboration.</p>
-                            <div class="blog-tags">
-                                <span class="blog-tag">Git</span>
-                                <span class="blog-tag">Migration</span>
-                                <span class="blog-tag">DevOps</span>
-                            </div>
+                        <article class="blog-card" data-filter-item data-date="2024-03-31" data-reactions="8">
+                            <p class="blog-meta"><span><i class="far fa-calendar" aria-hidden="true"></i>Mar 2024</span><span><i class="far fa-clock" aria-hidden="true"></i>5 min read</span></p>
+                            <h3><a href="https://dev.to/aws-builders/create-mongodb-atlas-cluster-with-terraform-and-aws-51d8" target="_blank" rel="noopener noreferrer">Create MongoDB Atlas Cluster With Terraform and AWS</a></h3>
+                            <p>Provisioning a MongoDB Atlas cluster on AWS end-to-end with Terraform.</p>
+                            <div class="blog-tags"><span class="blog-tag">aws</span><span class="blog-tag">mongodb</span><span class="blog-tag">terraform</span></div>
                         </article>
-                        <article class="blog-card" role="listitem" data-filter-item>
-                            <p class="blog-meta"><i class="fas fa-cloud me-2" aria-hidden="true"></i>DEV Community</p>
-                            <h3>
-                                <a href="https://dev.to/sagary2j/6r-strategies-for-cloud-migration-all-in-one-23l8" target="_blank" rel="noopener noreferrer">6(R) Strategies for Cloud Migration - All in One</a>
-                            </h3>
+                        <article class="blog-card" data-filter-item data-date="2022-07-23" data-reactions="7">
+                            <p class="blog-meta"><span><i class="far fa-calendar" aria-hidden="true"></i>Jul 2022</span><span><i class="far fa-clock" aria-hidden="true"></i>10 min read</span></p>
+                            <h3><a href="https://dev.to/sagary2j/6r-strategies-for-cloud-migration-all-in-one-23l8" target="_blank" rel="noopener noreferrer">6(R) Strategies for Cloud Migration — All in One</a></h3>
                             <p>A concise breakdown of cloud migration approaches to choose the right path for different application portfolios.</p>
-                            <div class="blog-tags">
-                                <span class="blog-tag">Cloud</span>
-                                <span class="blog-tag">Architecture</span>
-                                <span class="blog-tag">Strategy</span>
-                            </div>
+                            <div class="blog-tags"><span class="blog-tag">cloud</span><span class="blog-tag">migration</span><span class="blog-tag">strategy</span></div>
                         </article>
-                        <article class="blog-card" role="listitem" data-filter-item>
-                            <p class="blog-meta"><i class="fas fa-cubes me-2" aria-hidden="true"></i>DEV Community</p>
-                            <h3>
-                                <a href="https://dev.to/sagary2j/infrastructure-as-code-using-terraform-h82" target="_blank" rel="noopener noreferrer">Infrastructure as Code Using Terraform</a>
-                            </h3>
+                        <article class="blog-card" data-filter-item data-date="2022-07-08" data-reactions="6">
+                            <p class="blog-meta"><span><i class="far fa-calendar" aria-hidden="true"></i>Jul 2022</span><span><i class="far fa-clock" aria-hidden="true"></i>6 min read</span></p>
+                            <h3><a href="https://dev.to/sagary2j/infrastructure-as-code-using-terraform-h82" target="_blank" rel="noopener noreferrer">Infrastructure as Code Using Terraform</a></h3>
                             <p>An IaC primer on provisioning consistent, repeatable infrastructure using Terraform modules and workflows.</p>
-                            <div class="blog-tags">
-                                <span class="blog-tag">Terraform</span>
-                                <span class="blog-tag">IaC</span>
-                                <span class="blog-tag">Automation</span>
-                            </div>
+                            <div class="blog-tags"><span class="blog-tag">terraform</span><span class="blog-tag">iac</span><span class="blog-tag">azure</span></div>
                         </article>
+                        <article class="blog-card" data-filter-item data-date="2022-05-05" data-reactions="27">
+                            <p class="blog-meta"><span><i class="far fa-calendar" aria-hidden="true"></i>May 2022</span><span><i class="far fa-clock" aria-hidden="true"></i>10 min read</span></p>
+                            <h3><a href="https://dev.to/sagary2j/elk-stack-deployment-using-minikube-single-node-architecture-16cl" target="_blank" rel="noopener noreferrer">ELK Stack Deployment Using Minikube Single Node Architecture</a></h3>
+                            <p>Step-by-step implementation of an ELK stack in a compact Kubernetes environment for logs and observability.</p>
+                            <div class="blog-tags"><span class="blog-tag">kubernetes</span><span class="blog-tag">elk</span><span class="blog-tag">observability</span></div>
+                        </article>
+                        <article class="blog-card" data-filter-item data-date="2022-03-18" data-reactions="8">
+                            <p class="blog-meta"><span><i class="far fa-calendar" aria-hidden="true"></i>Mar 2022</span><span><i class="far fa-clock" aria-hidden="true"></i>7 min read</span></p>
+                            <h3><a href="https://dev.to/sagary2j/migrating-a-subversionsvn-repository-to-gitgitlabgithub-repository-2me3" target="_blank" rel="noopener noreferrer">Migrating a Subversion (SVN) Repository to Git, GitLab, and GitHub</a></h3>
+                            <p>A practical migration playbook to modernize source control with reduced risk and better team collaboration.</p>
+                            <div class="blog-tags"><span class="blog-tag">git</span><span class="blog-tag">migration</span><span class="blog-tag">devops</span></div>
+                        </article>
+                    </div>
+                    <p class="empty-state" data-empty hidden>No articles match that search.</p>
+                    <p class="section-foot"><a href="https://dev.to/sagary2j" target="_blank" rel="noopener noreferrer">Read everything on DEV <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>
+                </div>
+            </section>
+
+            <!-- Education & awards-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <header class="section-head">
+                        <p class="section-kicker">cat education.md awards.md</p>
+                        <h2>Education &amp; Recognition</h2>
+                    </header>
+                    <div class="two-col">
+                        <div>
+                            <h3 class="subsection-title">Education</h3>
+                            <ul class="edu-list">
+                                <li class="edu-item">
+                                    <span class="edu-date">Jul 2007 — Aug 2011</span>
+                                    <h3>Bachelor's Degree, Computer Engineering</h3>
+                                    <p>D. Y. Patil College of Engineering (DYPCOE), Akurdi, Pune · First Class</p>
+                                </li>
+                                <li class="edu-item">
+                                    <span class="edu-date">Jun 2005 — May 2007</span>
+                                    <h3>HSC</h3>
+                                    <p>Progressive Education Society's Modern College of Arts, Science and Commerce, Pune · First Class</p>
+                                </li>
+                                <li class="edu-item">
+                                    <span class="edu-date">Apr 1995 — Apr 2005</span>
+                                    <h3>SSC, Mathematics and Computer Science</h3>
+                                    <p>Hindustan Antibiotics School</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="subsection-title">Awards</h3>
+                            <div class="award-grid">
+                                <article class="award-card">
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <div>
+                                        <h3>Star Performer of the Year</h3>
+                                        <p>Inbox Masters Systems Private Ltd.</p>
+                                    </div>
+                                </article>
+                                <article class="award-card">
+                                    <i class="fas fa-trophy" aria-hidden="true"></i>
+                                    <div>
+                                        <h3>Team Excellence Award</h3>
+                                        <p>Sears</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-            <hr class="m-0" />
+
             <!-- Interests-->
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p class="mb-4">Outside work, I recharge with adventure, creativity, and continuous learning. My interests keep my thinking sharp and my problem-solving style practical.</p>
+                    <header class="section-head">
+                        <p class="section-kicker">systemctl status off-duty</p>
+                        <h2>Interests</h2>
+                        <p class="section-lede">Outside work, I recharge with adventure, creativity, and continuous learning. My interests keep my thinking sharp and my problem-solving style practical.</p>
+                    </header>
                     <div class="interest-grid">
                         <article class="interest-card">
-                            <h3><i class="fas fa-mountain text-primary me-2" aria-hidden="true"></i>Outdoors</h3>
+                            <h3><span class="skill-icon"><i class="fas fa-mountain" aria-hidden="true"></i></span>Outdoors</h3>
                             <p>Trekking, long rides, and kayaking are my go-to activities for resilience and focus.</p>
-                            <div class="interest-tags">
-                                <span class="interest-tag">Trekking</span>
-                                <span class="interest-tag">Long Rides</span>
-                                <span class="interest-tag">Kayaking</span>
-                            </div>
+                            <div class="interest-tags"><span class="interest-tag">Trekking</span><span class="interest-tag">Long Rides</span><span class="interest-tag">Kayaking</span></div>
                         </article>
                         <article class="interest-card">
-                            <h3><i class="fas fa-film text-primary me-2" aria-hidden="true"></i>Story Worlds</h3>
+                            <h3><span class="skill-icon"><i class="fas fa-film" aria-hidden="true"></i></span>Story Worlds</h3>
                             <p>I enjoy sci-fi and fantasy movies and series, especially stories about future tech and complex systems.</p>
-                            <div class="interest-tags">
-                                <span class="interest-tag">Sci-Fi</span>
-                                <span class="interest-tag">Fantasy</span>
-                                <span class="interest-tag">World Building</span>
-                            </div>
+                            <div class="interest-tags"><span class="interest-tag">Sci-Fi</span><span class="interest-tag">Fantasy</span><span class="interest-tag">World Building</span></div>
                         </article>
                         <article class="interest-card">
-                            <h3><i class="fas fa-utensils text-primary me-2" aria-hidden="true"></i>Kitchen Experiments</h3>
+                            <h3><span class="skill-icon"><i class="fas fa-utensils" aria-hidden="true"></i></span>Kitchen Experiments</h3>
                             <p>An aspiring chef at home, I like experimenting with flavors the same way I experiment with automation ideas.</p>
-                            <div class="interest-tags">
-                                <span class="interest-tag">Cooking</span>
-                                <span class="interest-tag">Experimentation</span>
-                                <span class="interest-tag">Creativity</span>
-                            </div>
+                            <div class="interest-tags"><span class="interest-tag">Cooking</span><span class="interest-tag">Experimentation</span><span class="interest-tag">Creativity</span></div>
                         </article>
                         <article class="interest-card">
-                            <h3><i class="fas fa-microchip text-primary me-2" aria-hidden="true"></i>Tech Curiosity</h3>
+                            <h3><span class="skill-icon"><i class="fas fa-microchip" aria-hidden="true"></i></span>Tech Curiosity</h3>
                             <p>I spend free time exploring Cloud, DevOps, AI, and CyberSecurity trends to stay ahead of what is next.</p>
-                            <div class="interest-tags">
-                                <span class="interest-tag">Cloud</span>
-                                <span class="interest-tag">AI</span>
-                                <span class="interest-tag">CyberSecurity</span>
-                            </div>
+                            <div class="interest-tags"><span class="interest-tag">Cloud</span><span class="interest-tag">AI</span><span class="interest-tag">CyberSecurity</span></div>
                         </article>
                     </div>
                 </div>
             </section>
-        </div>
-        <!-- Fixed Resume Action Buttons -->
-        <div id="resumeActions" aria-label="Resume actions">
-            <a class="btn btn-primary btn-sm resume-action-btn" href="Sagar_Ravkhande_Resume_2026.pdf" download="Sagar_Ravkhande_Resume_2026.pdf" title="Download CV">
-                <i class="fas fa-download me-1"></i><span class="resume-btn-label">Download CV</span>
-            </a>
-            <a class="btn btn-outline-light btn-sm resume-action-btn" href="Sagar_Ravkhande_Resume_2026.pdf" target="_blank" rel="noopener noreferrer" title="Preview CV in browser">
-                <i class="fas fa-eye me-1"></i><span class="resume-btn-label">Preview CV</span>
-            </a>
-        </div>
-        <div id="scrollProgress" aria-hidden="true"></div>
-        <button id="backToTop" type="button" aria-label="Back to top">
-            <i class="fas fa-arrow-up"></i>
-        </button>
+
+            <!-- Contact-->
+            <section class="resume-section" id="contact">
+                <div class="resume-section-content">
+                    <header class="section-head">
+                        <p class="section-kicker">ssh sagar@contact</p>
+                        <h2>Contact</h2>
+                    </header>
+                    <div class="contact-card">
+                        <div>
+                            <h3>Let's build reliable platforms together.</h3>
+                            <p>Have a platform to scale, a migration to plan, or a pipeline that needs taming? I'm always happy to talk cloud architecture, Kubernetes, and DevSecOps.</p>
+                            <div class="hero-actions">
+                                <a id="contactEmail" class="btn-accent" href="mailto:sagar.ravkhande@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i>Email me</a>
+                                <button type="button" class="btn-ghost" data-copy-email><i class="far fa-copy" aria-hidden="true"></i>Copy email</button>
+                            </div>
+                        </div>
+                        <ul class="contact-links">
+                            <li><a class="contact-link" href="https://www.linkedin.com/in/sagar-ravkhande/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in" aria-hidden="true"></i>LinkedIn<span class="contact-handle">/in/sagar-ravkhande</span></a></li>
+                            <li><a class="contact-link" href="https://github.com/sagary2j" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i>GitHub<span class="contact-handle">@sagary2j</span></a></li>
+                            <li><a class="contact-link" href="https://dev.to/sagary2j" target="_blank" rel="noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i>DEV Community<span class="contact-handle">@sagary2j</span></a></li>
+                            <li><a class="contact-link" href="https://x.com/RavkhandeSagar" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter" aria-hidden="true"></i>X<span class="contact-handle">@RavkhandeSagar</span></a></li>
+                            <li><span class="contact-link"><i class="fas fa-location-dot" aria-hidden="true"></i>Wrocław, Poland<span class="contact-handle">CET / UTC+1</span></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <span>© <span id="footerYear">2026</span> Sagar R Ravkhande · HTML, CSS &amp; vanilla JS</span>
+            <span id="deployStatus" class="deploy-status"><span class="dot" aria-hidden="true"></span>served by GitHub Pages</span>
+        </footer>
+
+        <button id="backToTop" type="button" aria-label="Back to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
+        <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+        <dialog id="palette" class="palette" aria-label="Command palette">
+            <div class="palette-search">
+                <i class="fas fa-magnifying-glass" aria-hidden="true"></i>
+                <input id="paletteInput" class="palette-input" type="text" placeholder="Type a command or search…" role="combobox" aria-expanded="true" aria-controls="paletteList" aria-autocomplete="list" aria-label="Search commands" autocomplete="off" spellcheck="false" />
+                <kbd>Esc</kbd>
+            </div>
+            <ul id="paletteList" class="palette-list" role="listbox" aria-label="Commands"></ul>
+            <div class="palette-footer"><span><kbd>↑</kbd> <kbd>↓</kbd> navigate</span><span><kbd>Enter</kbd> run</span><span><kbd>Esc</kbd> close</span></div>
+        </dialog>
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js?v=4"></script>
+        <script src="js/scripts.js?v=5"></script>
     </body>
 </html>
