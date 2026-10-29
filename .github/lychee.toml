@@ -1,0 +1,15 @@
+# Link checker settings for the portfolio (https://lychee.cli.rs)
+
+max_concurrency = 8
+max_retries = 3
+timeout = 20
+accept = ["200..=299", "403", "429"]
+
+exclude = [
+  # These sites block automated requests, so they always look broken in CI.
+  '^https://(www\.)?linkedin\.com',
+  '^https://(www\.)?(x|twitter)\.com',
+  '^https://www\.instagram\.com',
+  # Preconnect hints, not real pages.
+  '^https://fonts\.(googleapis|gstatic)\.com/?$',
+]
