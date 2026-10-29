@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const DEVTO_USER = 'sagary2j';
     const SITE_REPO = 'Sagar-Ravkhande';
     // GitHub Pages publishes this branch; keep in sync with the Pages settings.
-    const SITE_BRANCH = 'new-static-website-resume';
+    const SITE_BRANCH = 'main';
     const RESUME_PDF = 'Sagar_Ravkhande_Resume_2026.pdf';
     const CACHE_TTL_MS = 30 * 60 * 1000;
 
